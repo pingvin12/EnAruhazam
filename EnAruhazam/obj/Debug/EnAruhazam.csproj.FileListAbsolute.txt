@@ -120,3 +120,14 @@ C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruha
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.csproj.CopyComplete
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.exe
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\bin\Debug\EnAruhazam.exe.manifest
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\bin\Debug\EnAruhazam.application
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.TrustInfo.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.exe.manifest
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.application
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EdatManager.g.cs
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\OrderManager.g.cs
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\PeopleManager.g.cs
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EdatManager.baml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\OrderManager.baml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\PeopleManager.baml

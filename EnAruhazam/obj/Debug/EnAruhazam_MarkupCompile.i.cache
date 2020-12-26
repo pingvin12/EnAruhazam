@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\obj\Debug\
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\
 EnAruhazam
 none
 false
 DEBUG;TRACE
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\App.xaml
-2-690112644
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\App.xaml
+5-767309015
 
-7-1228937763
-38-196850602
-MainWindow.xaml;MainWindowManager.xaml;
+10-1642270863
+381010952855
+EdatManager.xaml;MainWindow.xaml;MainWindowManager.xaml;OrderManager.xaml;PeopleManager.xaml;
 
 True
 

@@ -7,96 +7,102 @@
         mc:Ignorable="d"
         Title="EnAruhazam" Height="768" Width="1100"
 		>
-	<Grid>
-		<TabControl HorizontalAlignment="Left"  Height="650" Margin="209,10,0,0" VerticalAlignment="Top" Width="873">
-			<TabItem Header="Statisztikák">
-				<StackPanel>
+    <Grid>
+        
+        <TabControl HorizontalAlignment="Left"  Height="auto" Margin="209,10,0,0" Width="873" VerticalAlignment="Top" >
+            <TabItem Header="Statisztikák">
+                <StackPanel>
 
-					<Label Content="Mai Előre vetített forgalom: " Margin="0,0,589,0"/>
+                    <Label Content="Mai Előre vetített forgalom: " Margin="0,0,589,0"/>
 
-					<ListView Name="ProjectedTraffic"  Height="209" Margin="0,20,589,0">
-						<ListView.View>
-							<GridView>
-								<GridViewColumn/>
-							</GridView>
-						</ListView.View>
-					</ListView>
-					<Label Content="Jelenlegi forgalom: " Margin="0,0,589,0"/>
-					<ListView Name="CurrentTraffic" Height="209" Margin="0,20,589,0">
-						<ListView.View>
-							<GridView>
-								<GridViewColumn/>
-							</GridView>
-						</ListView.View>
-					</ListView>
-
-
-				</StackPanel>
-			</TabItem>
-			<TabItem Header="Menedzsment">
-				<Grid>
-				<Button Content="HR" Height="100" Margin="10,10,744,512" />
-					<Button Content="OM" Height="100" Margin="128,10,626,512" />
-					<Button Content="EM" Height="100" Margin="246,10,508,512" />
-				</Grid>
-			</TabItem>
-			<TabItem Header="Üzenetek">
-				<Grid Background="#FFE5E5E5">
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="10*"/>
-						<ColumnDefinition Width="89*"/>
-					</Grid.ColumnDefinitions>
-					<TreeView	Name="MTree"	Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="602" Margin="10,10,0,0" VerticalAlignment="Top" Width="200">
-						<TreeViewItem Header="TODO"></TreeViewItem>
-					</TreeView>
-					<RichTextBox Name="MContent" Grid.Column="1" HorizontalAlignment="Left" Height="376" Margin="127,72,0,0" VerticalAlignment="Top" Width="642">
-						<FlowDocument>
-							<Paragraph>
-								<Run Text="Szöveg"/>
-							</Paragraph>
-						</FlowDocument>
-					</RichTextBox>
-					<Label Name="MUser" Content="Kitől: " Grid.Column="1" HorizontalAlignment="Left" Margin="127,10,0,0" VerticalAlignment="Top" Width="642"/>
-					<Label Name="MTopic" Content="Tárgy: " Grid.Column="1" HorizontalAlignment="Left" Margin="127,41,0,0" VerticalAlignment="Top" Width="642"/>
-					<Button Content="Új Üzenet Írása" Grid.Column="1" HorizontalAlignment="Left" Margin="127,453,0,0" VerticalAlignment="Top" Width="172" Height="24"/>
-					<Button Content="Eltávolítás" Grid.Column="1" HorizontalAlignment="Left" Margin="597,453,0,0" VerticalAlignment="Top" Width="172" Height="24"/>
-				</Grid>
-			</TabItem>
-			<TabItem Header="Beállítások">
-				<Grid Background="#FFE5E5E5">
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="10*"/>
-						<ColumnDefinition Width="89*"/>
-					</Grid.ColumnDefinitions>
-					<CheckBox Content="Teljes Képernyő" HorizontalAlignment="Left" Margin="7,23,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="150" Name="FullScreen" Checked="FullScreen_Checked" Unchecked="FullScreen_Unchecked" />
-				</Grid>
-			</TabItem>
-			<TabItem Header="Segítség">
-				<Grid Background="#FFE5E5E5">
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="229*"/>
-						<ColumnDefinition Width="638*"/>
-					</Grid.ColumnDefinitions>
-					<Label Content="ÉnÁruházam" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="76"/>
-					<Label Content="Készítette: Fényes József" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="26" Width="148"/>
-					<Label Content="Verzió: 2020.12.13" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Height="26" Width="148"/>
-					<Label Content="Elérhetőség: fenyesj@gmail.com" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Height="26" Width="181"/>
-				</Grid>
-			</TabItem>
-			
+                    <ListView Name="ProjectedTraffic"  Height="209" Margin="0,20,589,0" SelectionChanged="ProjectedTraffic_SelectionChanged">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Content="Jelenlegi forgalom: " Margin="0,0,589,0"/>
+                    <ListView Name="CurrentTraffic" Height="209" Margin="0,20,589,0">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
 
 
-		</TabControl>
-		<StackPanel>
-			<Label HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="206" Height="38">
-				<Label Name="UserLoggedInAs" Content="" Width="186" Height="28" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Menedzsment">
+                <Grid>
+                    <StackPanel Name="ContentDisplay">
+                        <Button Click="Back_Click"	Name="Back" Content="Vissza" Visibility="Hidden"/>
+                    </StackPanel>
+                    <Button Name="HR" Content="HR" Height="100" Margin="10,10,744,512" Click="Button_Click"		/>
+                    <Button Name="OM" Content="OM" Height="100" Margin="128,10,626,512" Click="Button_Click_1" />
+                    <Button Name="EM" Content="EM" Height="100" Margin="246,10,508,512" Click="Button_Click_2" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Üzenetek">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="89*"/>
+                    </Grid.ColumnDefinitions>
+                    <TreeView	Name="MTree"	Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="602" Margin="10,10,0,0" VerticalAlignment="Top" Width="200">
+                        <TreeViewItem Header="TODO"></TreeViewItem>
+                    </TreeView>
+                    <RichTextBox Name="MContent" Grid.Column="1" HorizontalAlignment="Left" Height="376" Margin="127,72,0,0" VerticalAlignment="Top" Width="642">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Text="Szöveg"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                    <Label Name="MUser" Content="Kitől: " Grid.Column="1" HorizontalAlignment="Left" Margin="127,10,0,0" VerticalAlignment="Top" Width="642"/>
+                    <Label Name="MTopic" Content="Tárgy: " Grid.Column="1" HorizontalAlignment="Left" Margin="127,41,0,0" VerticalAlignment="Top" Width="642"/>
+                    <Button Content="Új Üzenet Írása" Grid.Column="1" HorizontalAlignment="Left" Margin="127,453,0,0" VerticalAlignment="Top" Width="172" Height="24"/>
+                    <Button Content="Eltávolítás" Grid.Column="1" HorizontalAlignment="Left" Margin="597,453,0,0" VerticalAlignment="Top" Width="172" Height="24"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Beállítások">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="89*"/>
+                    </Grid.ColumnDefinitions>
+                    <CheckBox Content="Teljes Képernyő" HorizontalAlignment="Left" Margin="7,23,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="150" Name="FullScreen" Checked="FullScreen_Checked" Unchecked="FullScreen_Unchecked" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Súgó">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="229*"/>
+                        <ColumnDefinition Width="638*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="ÉnÁruházam" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="76"/>
+                    <Label Content="Készítette: Fényes József" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="26" Width="148"/>
+                    <Label Content="Verzió: 2020.12.13" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Height="26" Width="148"/>
+                    <Label Content="Elérhetőség: fenyesj@gmail.com" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Height="26" Width="181"/>
+                </Grid>
+            </TabItem>
 
-			</Label>
-			<Label Content="Üdvözöljük! " HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="187"/>
 
 
-		</StackPanel>
+        </TabControl>
+        <StackPanel>
+
+            <Label HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="206" Height="38">
+
+                <Label Name="UserLoggedInAs" Content="" Width="186" Height="28" />
+
+            </Label>
+            <Label Content="Üdvözöljük! " HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="187"/>
 
 
-	</Grid>
+        </StackPanel>
+
+
+    </Grid>
 </Window>
