@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.exe" size="25048">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.exe" size="25560">
       <assemblyIdentity name="EnAruhazam" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/9YXaD0OzmsxWplgotAHIPEL3kcUooaU6VK2fs/yPb8=</dsig:DigestValue>
+        <dsig:DigestValue>onLspNn9NqlxxpXDNHcnfWahC6W+cpoXZR+RPK/K4/I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -332,7 +332,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>RXV1rk3DYjgKRKcCj5z6kS1MsHvS12LM8pjaGtwLHOA=</dsig:DigestValue>
+      <dsig:DigestValue>7q80LXqxAetmtLP2Ra114JFnS/yeNLTJvN7mqf+wQGA=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

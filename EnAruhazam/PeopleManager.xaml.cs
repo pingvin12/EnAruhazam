@@ -51,7 +51,8 @@ namespace EnAruhazam
 
         private void GoBack_Click(object sender, RoutedEventArgs e)
         {
-
+            
+            
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +30,7 @@ namespace EnAruhazam
             
             UserLoggedInAs.Content = "Bejelentkezve mint: " + SignedInUser;
             LoadProjected();
-           
+            LoadCurrent();
 
         }
 
@@ -43,8 +45,35 @@ namespace EnAruhazam
             base.OnClosed(e);
             Application.Current.Shutdown();
         }
+        public void LoadCurrent()
+        {
+            string sqlConnection = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=EnAruhazam;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
+
+            SqlConnection con = new SqlConnection(sqlConnection);
+            
+
+            
+
+                string CmdString = "SELECT date, time, total FROM dbo.Traffic ORDER BY date ASC";
+
+                SqlCommand cmd = new SqlCommand(CmdString, con);
+
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+
+                sda.Fill(ds);
+
+
+                CurrentTraffic.DataContext = ds.Tables[0].DefaultView;
+                con.Close();
+                
+                
+            
+        }
         
+
         public void LoadProjected()
         {
 
@@ -91,9 +120,20 @@ namespace EnAruhazam
             this.ContentDisplay.Children.Add(content as UIElement);
         }
 
+        private void revertWindowChild()
+        {
+            EM.Visibility = Visibility.Visible;
+            OM.Visibility = Visibility.Visible;
+            HR.Visibility = Visibility.Visible;
+            Back.Visibility = Visibility.Hidden;
+            ContentDisplay.Children.Clear();
+        }
+
+       
+
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            ContentDisplay.Children.Clear();
+            revertWindowChild();
 
         }
 
@@ -116,6 +156,11 @@ namespace EnAruhazam
         }
 
         private void ProjectedTraffic_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void CurrentTraffic_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }

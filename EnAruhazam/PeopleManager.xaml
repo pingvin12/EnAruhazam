@@ -12,7 +12,6 @@
         <Button Name="CheckMore" Content="Bővebben" HorizontalAlignment="Left" Margin="516,41,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Name="Remove" Content="Eltávolítás" HorizontalAlignment="Left" Margin="516,89,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Name="Modify" Content="Módosítás" HorizontalAlignment="Left" Margin="516,64,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Name="GoBack" Content="Vissza" HorizontalAlignment="Left" Margin="10,397,0,0" VerticalAlignment="Top" Width="75" Click="GoBack_Click"/>
 
     </Grid>
 </Window>

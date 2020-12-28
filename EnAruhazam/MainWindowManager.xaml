@@ -8,40 +8,38 @@
         Title="EnAruhazam" Height="768" Width="1100"
 		>
     <Grid>
-        
+
         <TabControl HorizontalAlignment="Left"  Height="auto" Margin="209,10,0,0" Width="873" VerticalAlignment="Top" >
             <TabItem Header="Statisztikák">
                 <StackPanel>
-
-                    <Label Content="Mai Előre vetített forgalom: " Margin="0,0,589,0"/>
-
-                    <ListView Name="ProjectedTraffic"  Height="209" Margin="0,20,589,0" SelectionChanged="ProjectedTraffic_SelectionChanged">
-                        <ListView.View>
-                            <GridView>
-                                <GridViewColumn/>
-                            </GridView>
-                        </ListView.View>
-                    </ListView>
                     <Label Content="Jelenlegi forgalom: " Margin="0,0,589,0"/>
-                    <ListView Name="CurrentTraffic" Height="209" Margin="0,20,589,0">
+                    <ListView Name="CurrentTraffic" Height="610" Margin="0,20,270,0" SelectionChanged="CurrentTraffic_SelectionChanged"  ItemsSource="{Binding Path=Table}">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn/>
+                                <GridViewColumn Header="dátum" Width="100" DisplayMemberBinding="{Binding Path=date}"/>
+                                <GridViewColumn Header="óra" Width="70" DisplayMemberBinding="{Binding Path=time}"/>
+                                <GridViewColumn Header="forgalom" Width="200" DisplayMemberBinding="{Binding Path=total}"/>
+                                
                             </GridView>
                         </ListView.View>
+                        
                     </ListView>
-
+                    <Grid>
+                        <Button Height="20" Width="60" Content="Keresés" Margin="0,0,807,0" />
+                    </Grid>
+                    
 
                 </StackPanel>
             </TabItem>
             <TabItem Header="Menedzsment">
                 <Grid>
                     <StackPanel Name="ContentDisplay">
-                        <Button Click="Back_Click"	Name="Back" Content="Vissza" Visibility="Hidden"/>
+
                     </StackPanel>
                     <Button Name="HR" Content="HR" Height="100" Margin="10,10,744,512" Click="Button_Click"		/>
                     <Button Name="OM" Content="OM" Height="100" Margin="128,10,626,512" Click="Button_Click_1" />
                     <Button Name="EM" Content="EM" Height="100" Margin="246,10,508,512" Click="Button_Click_2" />
+                    <Button Click="Back_Click"	Name="Back" Content="Vissza" Margin="284,657,316,10" Visibility="Hidden"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Üzenetek">
@@ -87,6 +85,7 @@
                     <Label Content="Elérhetőség: fenyesj@gmail.com" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Height="26" Width="181"/>
                 </Grid>
             </TabItem>
+            <TextBlock Height="100" TextWrapping="Wrap" Text="TextBlock" Width="100"/>
 
 
 
