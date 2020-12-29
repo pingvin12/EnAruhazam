@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace EnAruhazam
 {
@@ -21,16 +22,15 @@ namespace EnAruhazam
 
         public void LoadData()
         {
-            string sqlConnection = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=EnAruhazam;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+           
 
+            
 
-            string CmdString = string.Empty;
-
-            using (SqlConnection con = new SqlConnection(sqlConnection))
+            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
 
             {
 
-                CmdString = "SELECT Name,DateJoined,Email,Phone FROM dbo.Workers";
+                string CmdString = "SELECT Name,DateJoined,Email,Phone,Id FROM dbo.Workers";
 
                 SqlCommand cmd = new SqlCommand(CmdString, con);
 
@@ -53,6 +53,48 @@ namespace EnAruhazam
         {
             
             
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Modify_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Remove_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Biztos vagy benne?", "Törlés", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes) { 
+
+                try
+            {
+                    using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+                       
+                {
+                        
+                        using (SqlCommand command = new SqlCommand("DELETE FROM dbo.Workers WHERE Id = @Id", con))
+                    {
+                            
+                            command.CommandType = CommandType.Text;
+                            command.Parameters.AddWithValue("@Id", PeopleGrid.SelectedIndex+1);
+                            con.Open();
+                            command.ExecuteNonQuery();
+                           
+
+                        }
+                        LoadData();
+                    con.Close();
+                }
+            }
+            catch(SqlException err)
+            {
+                    System.Windows.MessageBox.Show(err.Message);
+            }
+            }
         }
     }
 }

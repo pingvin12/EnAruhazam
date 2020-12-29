@@ -5,29 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EnAruhazam"
         mc:Ignorable="d"
-        Title="EnAruhazam" Height="768" Width="1100"
+        Title="EnAruhazam" Height="800" Width="1280"
 		>
     <Grid>
 
         <TabControl HorizontalAlignment="Left"  Height="auto" Margin="209,10,0,0" Width="873" VerticalAlignment="Top" >
             <TabItem Header="Statisztikák">
                 <StackPanel>
-                    <Label Content="Jelenlegi forgalom: " Margin="0,0,589,0"/>
+                    <Label Content="Forgalmi táblázat" Margin="0,0,589,0"/>
+                    <Button Height="20" Content="Mai forgalom lekérése" Margin="4,0,733,0" Click="GetTodaysTraffic"/>
                     <ListView Name="CurrentTraffic" Height="610" Margin="0,20,270,0" SelectionChanged="CurrentTraffic_SelectionChanged"  ItemsSource="{Binding Path=Table}">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="dátum" Width="100" DisplayMemberBinding="{Binding Path=date}"/>
                                 <GridViewColumn Header="óra" Width="70" DisplayMemberBinding="{Binding Path=time}"/>
                                 <GridViewColumn Header="forgalom" Width="200" DisplayMemberBinding="{Binding Path=total}"/>
-                                
+
                             </GridView>
                         </ListView.View>
-                        
+
                     </ListView>
                     <Grid>
-                        <Button Height="20" Width="60" Content="Keresés" Margin="0,0,807,0" />
+                        <Button Name="SearchButton" Height="20" Content="Keresés dátum szerint" Margin="0,0,709,0" Click="SearchButton_Click" />
+                        <TextBox Name="SearchContext" Width="200" Margin="163,0,504,0"></TextBox>
                     </Grid>
-                    
+
 
                 </StackPanel>
             </TabItem>
@@ -37,8 +39,8 @@
 
                     </StackPanel>
                     <Button Name="HR" Content="HR" Height="100" Margin="10,10,744,512" Click="Button_Click"		/>
-                    <Button Name="OM" Content="OM" Height="100" Margin="128,10,626,512" Click="Button_Click_1" />
-                    <Button Name="EM" Content="EM" Height="100" Margin="246,10,508,512" Click="Button_Click_2" />
+                    <Button Name="OM" Content="OM" Height="100" Margin="128,10,626,512" Click="Button_Click_2" />
+                    <Button Name="EM" Content="EM" Height="100" Margin="246,10,508,512" Click="Button_Click_1" />
                     <Button Click="Back_Click"	Name="Back" Content="Vissza" Margin="284,657,316,10" Visibility="Hidden"/>
                 </Grid>
             </TabItem>
@@ -71,6 +73,7 @@
                         <ColumnDefinition Width="89*"/>
                     </Grid.ColumnDefinitions>
                     <CheckBox Content="Teljes Képernyő" HorizontalAlignment="Left" Margin="7,23,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="150" Name="FullScreen" Checked="FullScreen_Checked" Unchecked="FullScreen_Unchecked" />
+
                 </Grid>
             </TabItem>
             <TabItem Header="Súgó">
@@ -85,9 +88,6 @@
                     <Label Content="Elérhetőség: fenyesj@gmail.com" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Height="26" Width="181"/>
                 </Grid>
             </TabItem>
-            <TextBlock Height="100" TextWrapping="Wrap" Text="TextBlock" Width="100"/>
-
-
 
         </TabControl>
         <StackPanel>

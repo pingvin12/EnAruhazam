@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.exe" size="25560">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.exe" size="28632">
       <assemblyIdentity name="EnAruhazam" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>onLspNn9NqlxxpXDNHcnfWahC6W+cpoXZR+RPK/K4/I=</dsig:DigestValue>
+        <dsig:DigestValue>TXxgkZjzNiatl1LydkqwHSgXgfHG7Xk0IQzbgJFcrcE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -317,22 +317,22 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="EnAruhazam.exe.config" size="3179">
+  <file name="EnAruhazam.exe.config" size="3535">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GIiojF8QfJ+kzA/y7gWzDK7MCKVyqA4QoErIO4iZYD4=</dsig:DigestValue>
+      <dsig:DigestValue>t8QNYIdRBBREkqjUX6aoaGPaKmhsB5OpmqzFpSkfi+0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="EnAruhazam.pdb" size="79360">
+  <file name="EnAruhazam.pdb" size="87552">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>7q80LXqxAetmtLP2Ra114JFnS/yeNLTJvN7mqf+wQGA=</dsig:DigestValue>
+      <dsig:DigestValue>ienGE5qvSXJK51CA+WYXEdC/3R2VTDg0Y8wMUpu3aQE=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

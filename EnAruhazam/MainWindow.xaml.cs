@@ -35,7 +35,7 @@ namespace EnAruhazam
 
         private void submit_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlConnection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=EnAruhazam;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection sqlConnection = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
             string query = "Select * From dbo.Managers Where Name = '" + name.Text.Trim() + "' AND Password = '" + pass.Password.Trim() + "'";
             SqlDataAdapter sqlData = new SqlDataAdapter(query, sqlConnection);
             DataTable dataTable = new DataTable();
