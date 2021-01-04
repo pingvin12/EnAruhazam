@@ -34,7 +34,7 @@ namespace EnAruhazam
 
             {
 
-                string CmdString = "SELECT ProductName, ExpirationDate, Row, Spot, Price FROM dbo.Product";
+                string CmdString = "SELECT ProductName, ExpirationDate, Row, Spot, Price, Id FROM dbo.Product";
 
                 SqlCommand cmd = new SqlCommand(CmdString, con);
 
@@ -69,9 +69,32 @@ namespace EnAruhazam
             }
         }
 
+        private void changeWindowChild(Window window)
+        {
+            AddDisplay.Children.Clear();
+
+            object content = window.Content;
+            window.Content = null;
+            window.Close();
+            this.AddDisplay.Children.Add(content as UIElement);
+        }
+
+
         private void Add_Click(object sender, RoutedEventArgs e)
         {
 
+
+            if(AddDisplay.Children.Count == 0)
+            {
+                AddOrder ao = new AddOrder();
+                changeWindowChild(ao);
+                LoadProducts();
+            }
+            else
+            {
+                MessageBox.Show("Hozzáadás ablak már helyén van így frissítettük a táblázatot.");
+                LoadProducts();
+            }
         }
     }
 }

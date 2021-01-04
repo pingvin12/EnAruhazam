@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Data;
 using System.Data.SqlClient;
-using System.Windows.Forms;
+
 
 namespace EnAruhazam
 {
@@ -57,13 +57,30 @@ namespace EnAruhazam
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-
+            if (PeopleAddDisplay.Children.Count == 0)
+            {
+                AddPerson ao = new AddPerson();
+                changeWindowChild(ao);
+                LoadData();
+            }
+            else
+            {
+                MessageBox.Show("Hozzáadás ablak már helyén van így frissítettük a táblázatot.");
+                LoadData();
+            }
         }
 
-        private void Modify_Click(object sender, RoutedEventArgs e)
+
+        private void changeWindowChild(Window window)
         {
+            PeopleAddDisplay.Children.Clear();
 
+            object content = window.Content;
+            window.Content = null;
+            window.Close();
+            this.PeopleAddDisplay.Children.Add(content as UIElement);
         }
+
 
         private void Remove_Click(object sender, RoutedEventArgs e)
         {

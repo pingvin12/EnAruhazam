@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\App.xaml
-5-767309015
+71169380755
 
-10360237515
+121179179541
 40-498073252
-EdatManager.xaml;MainWindow.xaml;MainWindowManager.xaml;OrderManager.xaml;PeopleManager.xaml;
+AddOrder.xaml;AddPerson.xaml;EdatManager.xaml;MainWindow.xaml;MainWindowManager.xaml;OrderManager.xaml;PeopleManager.xaml;
 
 False
 
