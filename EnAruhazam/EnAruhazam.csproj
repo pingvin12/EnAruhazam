@@ -163,6 +163,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ManagerForWorkers.xaml.cs">
+      <DependentUpon>ManagerForWorkers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ShiftManager.xaml.cs">
       <DependentUpon>ShiftManager.xaml</DependentUpon>
     </Compile>
@@ -200,6 +203,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MainWindowManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManagerForWorkers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

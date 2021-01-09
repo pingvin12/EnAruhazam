@@ -2,6 +2,6 @@
  WPF C# Application with SQL Database
 
 
-Username for login: adm 
+Username for login: fny
 and for password: 123
 

@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EnAruhazam"
         mc:Ignorable="d"
-        Background="#124E78"  ResizeMode="NoResize"  Title="Login" Height="350" Width="400">
+        Background="#124E78"  ResizeMode="NoResize"  Title="Login" Height="398.904" Width="400">
 	<Border Background="#F0F0C9" CornerRadius="15" Margin="15">
 	<StackPanel Margin="20">
 			<Label  Background="#F2BB05" Content="Bejelentkezés" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
 			<Separator Height="30"></Separator>
-			<Label Content="Név:"></Label>
+            <Label Name="username" Content="Felhasználónév:"></Label>
 			<TextBox Name="name" FontSize="15" ></TextBox>
 			
 			<Label  Content="Jelszó:"></Label>
 			<PasswordBox Name="pass" FontSize="15" ></PasswordBox>
-			
+			<CheckBox Name="isManager" Content="Vezető" Checked="isManager_Checked" Unchecked="isManager_Unchecked"/>
 			<Button Margin="40" Name="submit" Content="Bejelentkezés" Width="100" Click="submit_Click"></Button>
 	</StackPanel>
 	</Border>

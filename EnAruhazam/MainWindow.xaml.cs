@@ -25,7 +25,7 @@ namespace EnAruhazam
         public MainWindow()
         {
             InitializeComponent();
-
+            
         }
 
         public partial class signedInUser
@@ -33,19 +33,20 @@ namespace EnAruhazam
             public string userName { get; set; }
         }
 
-        private void submit_Click(object sender, RoutedEventArgs e)
+        private void connectasManager()
         {
             SqlConnection sqlConnection = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
-            string query = "Select * From dbo.Managers Where Name = '" + name.Text.Trim() + "' AND Password = '" + pass.Password.Trim() + "'";
+            string query = "Select FullName From dbo.Managers Where Name = '" + name.Text.Trim() + "' AND Password = '" + pass.Password.Trim() + "'";
             DataSet getUser = MSSQLHelper.NewConnection("EnAruhazam", query);
-            
+
             signedInUser user = new signedInUser();
-            user.userName = name.Text;
-            if(getUser.Tables[0].Rows.Count == 1)
+            
+            if (getUser.Tables[0].Rows.Count == 1)
             {
+                user.userName = getUser.Tables[0].Rows[0][0].ToString();
                 MainWindowManager manager = new MainWindowManager(user.userName);
 
-                
+
                 manager.Show();
                 this.Hide();
             }
@@ -53,16 +54,54 @@ namespace EnAruhazam
             {
                 MessageBox.Show("Felhasználónév vagy jelszó helytelen!");
             }
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        }
+        private void connectasWorker()
+        {
+            SqlConnection sqlConnection = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
+            string query = "Select Name From dbo.Workers Where Email = '" + name.Text.Trim() + "' AND Password = '" + pass.Password.Trim() + "' AND isActive=1";
+            DataSet getUser = MSSQLHelper.NewConnection("EnAruhazam", query);
+
+            signedInUser user = new signedInUser();
+           
+            if (getUser.Tables[0].Rows.Count == 1)
+            {
+                user.userName = getUser.Tables[0].Rows[0][0].ToString();
+                ManagerForWorkers wmanager = new ManagerForWorkers(user.userName);
+
+
+                wmanager.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Felhasználónév vagy jelszó helytelen!");
+            }
         }
 
+        private void submit_Click(object sender, RoutedEventArgs e)
+        {
+            if (isManager.IsChecked == true)
+            {
+                
+                connectasManager();
+
+
+            }
+            else {
+
+                connectasWorker();
+            }
+
+        }
+
+        private void isManager_Checked(object sender, RoutedEventArgs e)
+        {
+            username.Content = "Felhasználónév:";
+        }
+
+        private void isManager_Unchecked(object sender, RoutedEventArgs e)
+        {
+            username.Content = "Email:";
+        }
     }
 }

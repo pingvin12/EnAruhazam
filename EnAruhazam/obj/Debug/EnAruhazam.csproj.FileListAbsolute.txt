@@ -137,3 +137,5 @@ C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\AddPers
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\AddPerson.baml
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\ShiftManager.g.cs
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\ShiftManager.baml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\ManagerForWorkers.g.cs
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\ManagerForWorkers.baml

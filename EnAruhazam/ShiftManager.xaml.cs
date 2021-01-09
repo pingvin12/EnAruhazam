@@ -35,10 +35,20 @@ namespace EnAruhazam
 
             {
 
-                string CmdString = "SELECT dbo.Workers.Name,ShiftStart,ShiftEnd,WorkerPos FROM dbo.Shifts INNER JOIN dbo.Workers ON dbo.Shifts.WorkerId=dbo.Workers.Id";
+                string CmdString = "SELECT dbo.Workers.Name,ShiftStart,ShiftEnd,WorkerPos FROM dbo.Shifts INNER JOIN dbo.Workers ON dbo.Shifts.WorkerId=dbo.Workers.Id WHERE WorkerPos = 'Árufeltölto' OR WorkerPos = 'Pénztáros'";
                 DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
 
                 ShiftDisplay.ItemsSource = loadData.Tables[0].DefaultView;
+                con.Close();
+            }
+            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+
+            {
+
+                string CmdString = "SELECT dbo.Workers.Name, ShiftStart,ShiftEnd,Description from dbo.Schedules INNER JOIN dbo.Workers ON dbo.Schedules.WorkerId=dbo.Workers.Id";
+                DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
+
+                applications.ItemsSource = loadData.Tables[0].DefaultView;
                 con.Close();
             }
         }
@@ -56,6 +66,11 @@ namespace EnAruhazam
 
 
             }
+        }
+
+        private void applications_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
