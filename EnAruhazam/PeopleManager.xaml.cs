@@ -20,40 +20,22 @@ namespace EnAruhazam
         }
 
 
-        public void LoadData()
+        private void LoadData()
         {
            
-
-            
-
             using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
 
             {
 
                 string CmdString = "SELECT Name,DateJoined,Email,Phone,Id FROM dbo.Workers";
+                DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
 
-                SqlCommand cmd = new SqlCommand(CmdString, con);
-
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-
-                DataTable dt = new DataTable("Worker");
-
-                sda.Fill(dt);
-
-                PeopleGrid.ItemsSource = dt.DefaultView;
+                PeopleGrid.ItemsSource = loadData.Tables[0].DefaultView;
+                con.Close();
             }
-            }
-
-        private void PeopleGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
 
-        private void GoBack_Click(object sender, RoutedEventArgs e)
-        {
-            
-            
-        }
+       
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
@@ -84,7 +66,7 @@ namespace EnAruhazam
 
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Biztos vagy benne?", "Törlés", System.Windows.MessageBoxButton.YesNo);
+            MessageBoxResult messageBoxResult = MessageBox.Show("Biztos vagy benne?", "Törlés", MessageBoxButton.YesNo);
             if (messageBoxResult == MessageBoxResult.Yes) { 
 
                 try
@@ -109,7 +91,7 @@ namespace EnAruhazam
             }
             catch(SqlException err)
             {
-                    System.Windows.MessageBox.Show(err.Message);
+                    MessageBox.Show(err.Message);
             }
             }
         }

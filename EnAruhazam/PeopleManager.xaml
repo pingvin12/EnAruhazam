@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EnAruhazam"
         mc:Ignorable="d"
-        Title="PeopleManager" Height="450" Width="800">
+        Title="PeopleManager" Height="680.548" Width="1300">
     <Grid>
         <Label Content="HR" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <DataGrid IsReadOnly="True" Name="PeopleGrid" HorizontalAlignment="Left" Height="351" Margin="10,41,0,0" VerticalAlignment="Top" Width="501" SelectionChanged="PeopleGrid_SelectionChanged"/>
-        <Button Name="Add" Content="Hozzáadás" HorizontalAlignment="Left" Margin="516,41,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
-        <Button Name="Remove" Content="Eltávolítás" HorizontalAlignment="Left" Margin="516,66,0,0" VerticalAlignment="Top" Width="75" Click="Remove_Click"/>
-        <StackPanel Name="PeopleAddDisplay" HorizontalAlignment="Left" Height="318" Margin="516,91,0,0" VerticalAlignment="Top" Width="266"/>
+        <DataGrid IsReadOnly="True" Name="PeopleGrid" HorizontalAlignment="Left" Height="574" Margin="10,41,0,0" VerticalAlignment="Top" Width="768" />
+        <Button Name="Add" Content="Hozzáadás" HorizontalAlignment="Left" Margin="12,620,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
+        <Button Name="Remove" Content="Eltávolítás" HorizontalAlignment="Left" Margin="92,620,0,0" VerticalAlignment="Top" Width="75" Click="Remove_Click"/>
+        <StackPanel Name="PeopleAddDisplay" HorizontalAlignment="Left" Height="574" Margin="783,41,0,0" VerticalAlignment="Top" Width="499"/>
 
 
     </Grid>

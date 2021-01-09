@@ -37,17 +37,17 @@ namespace EnAruhazam
         {
             SqlConnection sqlConnection = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
             string query = "Select * From dbo.Managers Where Name = '" + name.Text.Trim() + "' AND Password = '" + pass.Password.Trim() + "'";
-            SqlDataAdapter sqlData = new SqlDataAdapter(query, sqlConnection);
-            DataTable dataTable = new DataTable();
-            sqlData.Fill(dataTable);
+            DataSet getUser = MSSQLHelper.NewConnection("EnAruhazam", query);
+            
             signedInUser user = new signedInUser();
             user.userName = name.Text;
-            if(dataTable.Rows.Count==1)
+            if(getUser.Tables[0].Rows.Count == 1)
             {
                 MainWindowManager manager = new MainWindowManager(user.userName);
+
                 
-                this.Hide();
                 manager.Show();
+                this.Hide();
             }
             else
             {

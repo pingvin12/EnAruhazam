@@ -17,42 +17,45 @@ using System.Windows.Shapes;
 namespace EnAruhazam
 {
     /// <summary>
-    /// Interaction logic for EdatManager.xaml
+    /// Interaction logic for ShiftManager.xaml
     /// </summary>
-    public partial class EdatManager : Window
+    public partial class ShiftManager : Window
     {
-        public EdatManager()
+        public ShiftManager()
         {
             InitializeComponent();
-            loadData();
+            LoadData();
         }
 
 
+        private void LoadData()
+        {
 
-        private void loadData()
+            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+
+            {
+
+                string CmdString = "SELECT dbo.Workers.Name,ShiftStart,ShiftEnd,WorkerPos FROM dbo.Shifts INNER JOIN dbo.Workers ON dbo.Shifts.WorkerId=dbo.Workers.Id";
+                DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
+
+                ShiftDisplay.ItemsSource = loadData.Tables[0].DefaultView;
+                con.Close();
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
-
             {
-
-                string CmdString = "SELECT EquipmentName FROM dbo.Equipments ORDER BY Id";
+                string CmdString = "SELECT dbo.Workers.Name,ShiftStart,ShiftEnd,WorkerPos FROM dbo.Shifts INNER JOIN dbo.Workers ON dbo.Shifts.WorkerId=dbo.Workers.Id WHERE ShiftStart = '" + ShiftDate.SelectedDate.Value.ToString("d MMM yyyy") + "'";
                 DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
 
-                Equipments.ItemsSource = loadData.Tables[0].DefaultView;
+                ShiftDisplay.ItemsSource = loadData.Tables[0].DefaultView;
                 con.Close();
+
+
+
             }
-
-            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
-
-            {
-
-                string CmdString = "SELECT Riport_Date,dbo.Equipments.EquipmentName FROM dbo.Riports INNER JOIN dbo.Equipments ON dbo.Riports.EquipmentID=dbo.Equipments.Id ";
-                DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
-
-                Riports.ItemsSource = loadData.Tables[0].DefaultView;
-                con.Close();
-            }
-
         }
     }
 }

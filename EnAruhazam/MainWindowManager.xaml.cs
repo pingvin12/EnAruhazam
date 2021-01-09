@@ -31,7 +31,7 @@ namespace EnAruhazam
             UserLoggedInAs.Content = "Bejelentkezve mint: " + SignedInUser;
             
             LoadCurrent();
-
+            
         }
 
 
@@ -50,18 +50,10 @@ namespace EnAruhazam
            SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
 
 
-            string CmdString = "SELECT date, time, total FROM dbo.Traffic ORDER BY date ASC";
+            
             //Forgalom lekérése a mai napra
-            SqlCommand cmd = new SqlCommand(CmdString, con);
-
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-
-            DataSet ds = new DataSet();
-
-            sda.Fill(ds);
-
-
-            CurrentTraffic.DataContext = ds.Tables[0].DefaultView;
+            DataSet currentstraffic = MSSQLHelper.NewConnection("EnAruhazam", "SELECT date, time, total FROM dbo.Traffic ORDER BY date ASC");
+            CurrentTraffic.DataContext = currentstraffic.Tables[0].DefaultView;
             con.Close();
 
 
@@ -70,27 +62,15 @@ namespace EnAruhazam
 
 
 
-        private void SetToFullScreen(bool tofullscreen)
-        {
-            if (tofullscreen) {
-                WindowStyle = WindowStyle.None;
-                WindowState = WindowState.Maximized;
-            }
-            else
-            {
-                WindowStyle = WindowStyle.SingleBorderWindow;
-                WindowState = WindowState.Normal;
-            }
-
-        }
+        
 
         private void FullScreen_Checked(object sender, RoutedEventArgs e)
         {
-            SetToFullScreen(true);
+            Options.setWindowToFullscreen(true, this);
         }
         private void FullScreen_Unchecked(object sender, RoutedEventArgs e)
         {
-            SetToFullScreen(false);
+            Options.setWindowToFullscreen(false, this);
         }
 
         private void RichTextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -104,6 +84,8 @@ namespace EnAruhazam
             OM.Visibility = Visibility.Hidden;
             HR.Visibility = Visibility.Hidden;
             Back.Visibility = Visibility.Visible;
+            Persons.Visibility = Visibility.Hidden;
+            Shifts.Visibility = Visibility.Hidden;
             ContentDisplay.Children.Clear();
 
             object content = window.Content;
@@ -118,10 +100,21 @@ namespace EnAruhazam
             OM.Visibility = Visibility.Visible;
             HR.Visibility = Visibility.Visible;
             Back.Visibility = Visibility.Hidden;
+            Shifts.Visibility = Visibility.Hidden;
+            Persons.Visibility = Visibility.Hidden;
             ContentDisplay.Children.Clear();
         }
 
-       
+       private void toHR()
+        {
+            EM.Visibility = Visibility.Hidden;
+            OM.Visibility = Visibility.Hidden;
+            HR.Visibility = Visibility.Hidden;
+            Back.Visibility = Visibility.Visible;
+            Shifts.Visibility = Visibility.Visible;
+            Persons.Visibility = Visibility.Visible;
+            ContentDisplay.Children.Clear();
+        }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
@@ -147,32 +140,17 @@ namespace EnAruhazam
             changeWindowChild(orderManager);
         }
 
-        private void ProjectedTraffic_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void CurrentTraffic_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
+       
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             string curSearch = SearchContext.Text;
             SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
             try
             {
-                string CmdString = "SELECT date, time, total FROM dbo.Traffic WHERE date = '" + curSearch + "' ORDER BY date ASC";
+
                 //Forgalom lekérése keresés szerint
-                SqlCommand cmd = new SqlCommand(CmdString, con);
-
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-
-                DataSet ds = new DataSet();
-
-                sda.Fill(ds);
-                CurrentTraffic.DataContext = ds.Tables[0].DefaultView;
+                DataSet searchtraffic = MSSQLHelper.NewConnection("EnAruhazam", "SELECT date, time, total FROM dbo.Traffic WHERE date = '" + curSearch + "' ORDER BY date ASC");
+                CurrentTraffic.DataContext = searchtraffic.Tables[0].DefaultView;
             }catch(SqlException ex)
             {
                 MessageBox.Show(ex.Message);
@@ -186,21 +164,26 @@ namespace EnAruhazam
             SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
 
 
-            string CmdString = "SELECT date, time, total FROM dbo.Traffic WHERE date = CAST( GETDATE() AS Date )  ORDER BY date ASC";
+
             //Forgalom lekérése a mai napra
-            SqlCommand cmd = new SqlCommand(CmdString, con);
 
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataSet todaystraffic = MSSQLHelper.NewConnection("EnAruhazam", "SELECT date, time, total FROM dbo.Traffic WHERE date = CAST( GETDATE() AS Date )  ORDER BY date ASC");
 
-            DataSet ds = new DataSet();
-
-            sda.Fill(ds);
-
-
-            CurrentTraffic.DataContext = ds.Tables[0].DefaultView;
+            CurrentTraffic.DataContext = todaystraffic.Tables[0].DefaultView;
             con.Close();
 
            
+        }
+
+        private void Shifts_Click(object sender, RoutedEventArgs e)
+        {
+            ShiftManager shiftManager = new ShiftManager();
+            changeWindowChild(shiftManager);
+        }
+
+        private void HR_Click(object sender, RoutedEventArgs e)
+        {
+            toHR();
         }
     }
 

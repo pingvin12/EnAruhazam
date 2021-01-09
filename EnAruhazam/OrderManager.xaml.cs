@@ -36,15 +36,9 @@ namespace EnAruhazam
 
                 string CmdString = "SELECT ProductName, ExpirationDate, Row, Spot, Price, Id FROM dbo.Product";
 
-                SqlCommand cmd = new SqlCommand(CmdString, con);
+                DataSet loadProducts = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
 
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-
-                DataTable dt = new DataTable("Product");
-
-                sda.Fill(dt);
-
-                ProductsGrid.ItemsSource = dt.DefaultView;
+                ProductsGrid.ItemsSource = loadProducts.Tables[0].DefaultView;
             }
         }
 

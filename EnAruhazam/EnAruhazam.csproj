@@ -163,6 +163,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ShiftManager.xaml.cs">
+      <DependentUpon>ShiftManager.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddOrder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -208,12 +211,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ShiftManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindowManager.xaml.cs">
       <DependentUpon>MainWindowManager.xaml</DependentUpon>
     </Compile>
     <Compile Include="MSSQLHelper.cs" />
+    <Compile Include="Options.cs" />
     <Compile Include="OrderManager.xaml.cs">
       <DependentUpon>OrderManager.xaml</DependentUpon>
     </Compile>

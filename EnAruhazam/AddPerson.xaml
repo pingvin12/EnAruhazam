@@ -5,21 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EnAruhazam"
         mc:Ignorable="d"
-        Title="AddPerson" Height="318" Width="266">
+        Title="AddPerson" Height="318" Width="500">
+
     <StackPanel>
 
-        <Label Content="Id:"></Label>
-        <TextBox Name="Id"></TextBox>
-        <Label Content="Person Name:"></Label>
-        <TextBox Name="PersonName"></TextBox>
-        <Label Content="JoinedDate:"></Label>
-        <TextBox Name="JoinedDate"></TextBox>
-        <Label Content="Password"></Label>
-        <TextBox Name="Password"></TextBox>
-        <Label Content="Phone:"></Label>
-        <TextBox Name="Phone"></TextBox>
-        <Label Content="Email:"></Label>
-        <TextBox Name="Email"></TextBox>
-        <Button Name="AddPer" Click="AddPer_Click" >Elküldés</Button>
+        <Label Content="Id:" Margin="0,0,305,0"></Label>
+        <TextBox Name="Id" Height="16" Margin="0,0,305,0"></TextBox>
+        <Label Content="Person Name:" Margin="0,0,305,0"></Label>
+        <TextBox Name="PersonName" Margin="0,0,305,0"></TextBox>
+        <Label Content="JoinedDate:" Margin="0,0,305,0"></Label>
+        <TextBox Name="JoinedDate" Margin="0,0,305,0"></TextBox>
+        <Label Content="Password" Margin="0,0,305,0"></Label>
+        <TextBox Name="Password" Margin="0,0,305,0"></TextBox>
+        <Label Content="Phone:" Margin="0,0,305,0"></Label>
+        <TextBox Name="Phone" Margin="0,0,305,0"></TextBox>
+        <Label Content="Email:" Margin="0,0,305,0"></Label>
+        <TextBox x:Name="Email" Margin="0,0,305,0"/>
+        <Button Name="AddPer" Click="AddPer_Click" Margin="0,0,305,0" >Elküldés</Button>
     </StackPanel>
 </Window>
