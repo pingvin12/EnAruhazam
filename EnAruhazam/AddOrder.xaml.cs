@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 namespace EnAruhazam
 {
     /// <summary>
-    /// Interaction logic for AddOrder.xaml
+    /// AddOrder window child for EdatManager
     /// </summary>
     public partial class AddOrder : Window
     {
@@ -25,7 +25,9 @@ namespace EnAruhazam
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Add logic for orders\products
+        /// </summary>
         private void AddOrd_Click(object sender, RoutedEventArgs e)
         {
             try

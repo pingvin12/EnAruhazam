@@ -18,7 +18,7 @@ using System.Data;
 namespace EnAruhazam
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Login window
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -27,12 +27,16 @@ namespace EnAruhazam
             InitializeComponent();
             
         }
-
+        /// <summary>
+        /// signed in username
+        /// </summary>
         public partial class signedInUser
         {
             public string userName { get; set; }
         }
-
+        /// <summary>
+        /// function to connect as a manager
+        /// </summary>
         private void connectasManager()
         {
             SqlConnection sqlConnection = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
@@ -55,6 +59,9 @@ namespace EnAruhazam
                 MessageBox.Show("Felhasználónév vagy jelszó helytelen!");
             }
         }
+        /// <summary>
+        /// function to connect as a worker
+        /// </summary>
         private void connectasWorker()
         {
             SqlConnection sqlConnection = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
@@ -77,7 +84,9 @@ namespace EnAruhazam
                 MessageBox.Show("Felhasználónév vagy jelszó helytelen!");
             }
         }
-
+        /// <summary>
+        /// Check if the user is a manager or not
+        /// </summary>
         private void submit_Click(object sender, RoutedEventArgs e)
         {
             if (isManager.IsChecked == true)
@@ -93,12 +102,16 @@ namespace EnAruhazam
             }
 
         }
-
+        /// <summary>
+        /// Managers use usernames while workers will use an email to login.
+        /// </summary>
         private void isManager_Checked(object sender, RoutedEventArgs e)
         {
             username.Content = "Felhasználónév:";
         }
-
+        /// <summary>
+        /// email format for workers
+        /// </summary>
         private void isManager_Unchecked(object sender, RoutedEventArgs e)
         {
             username.Content = "Email:";

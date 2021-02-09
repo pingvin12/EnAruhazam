@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EnAruhazam"
         mc:Ignorable="d"
+        
         Title="EnAruhazam" Height="800" Width="1920"
 		>
     <Grid>
@@ -94,6 +95,13 @@
                     <Label Content="Készítette: Fényes József" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="26" Width="148"/>
                     <Label Content="Verzió: 2020.12.13" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Height="26" Width="148"/>
                     <Label Content="Elérhetőség: fenyesj@gmail.com" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Height="26" Width="181"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Értesítések">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid Name="NotificationPanel" Height="576" SelectionChanged="NotificationPanel_SelectionChanged" Margin="0,10,0,135"/>
+                    <Button Height="37" Click="Button_Click_3" Margin="0,648,0,35">Értesítés törlése</Button>
+                    
                 </Grid>
             </TabItem>
 

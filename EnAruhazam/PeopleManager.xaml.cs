@@ -8,10 +8,11 @@ using System.Data.SqlClient;
 namespace EnAruhazam
 {
     /// <summary>
-    /// Interaction logic for PeopleManager.xaml
+    /// Admin HR manager for managing HR things
     /// </summary>
     public partial class PeopleManager : Window
     {
+
         public PeopleManager()
         {
             InitializeComponent();
@@ -19,7 +20,9 @@ namespace EnAruhazam
 
         }
 
-
+        /// <summary>
+        /// Load worker details on init
+        /// </summary>
         private void LoadData()
         {
            
@@ -35,8 +38,10 @@ namespace EnAruhazam
             }
         }
 
-       
 
+        /// <summary>
+        /// Add worker if necessary, if children equals null then refresh the data.
+        /// </summary>
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             if (PeopleAddDisplay.Children.Count == 0)
@@ -52,7 +57,9 @@ namespace EnAruhazam
             }
         }
 
-
+        /// <summary>
+        /// Add window
+        /// </summary>
         private void changeWindowChild(Window window)
         {
             PeopleAddDisplay.Children.Clear();
@@ -63,7 +70,9 @@ namespace EnAruhazam
             this.PeopleAddDisplay.Children.Add(content as UIElement);
         }
 
-
+        /// <summary>
+        /// Remove workers
+        /// </summary>
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult messageBoxResult = MessageBox.Show("Biztos vagy benne?", "Törlés", MessageBoxButton.YesNo);

@@ -11,11 +11,16 @@ namespace EnAruhazam
 {
     public static class MSSQLHelper
     {
+        /// <summary>
+        /// Gets connection string from configurationmanager and sets as default value
+        /// </summary>
         public static string ConVal(string name)
         {
             return ConfigurationManager.ConnectionStrings[name].ConnectionString;
         }
-
+        /// <summary>
+        /// Function for SELECT type data queries
+        /// </summary>
         public static DataSet NewConnection(string dataBase,string query)
         {
             SqlCommand command = new SqlCommand(query, new SqlConnection(ConVal(dataBase)));

@@ -10,7 +10,7 @@
 	<StackPanel Margin="20">
 			<Label  Background="#F2BB05" Content="Bejelentkezés" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
 			<Separator Height="30"></Separator>
-            <Label Name="username" Content="Felhasználónév:"></Label>
+            <Label Name="username" Content="Email:"></Label>
 			<TextBox Name="name" FontSize="15" ></TextBox>
 			
 			<Label  Content="Jelszó:"></Label>

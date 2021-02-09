@@ -28,7 +28,9 @@ namespace EnAruhazam
         }
 
 
-
+        /// <summary>
+        /// load values from specified table
+        /// </summary>
         private void loadData()
         {
             using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))

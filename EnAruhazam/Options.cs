@@ -10,7 +10,9 @@ namespace EnAruhazam
     class Options
     {
 
-
+        /// <summary>
+        /// Handles fullscreen mode
+        /// </summary>
         public static void setWindowToFullscreen(bool fullscreen, Window window)
         {
             switch (fullscreen)

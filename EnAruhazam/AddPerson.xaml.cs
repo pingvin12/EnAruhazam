@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 namespace EnAruhazam
 {
     /// <summary>
-    /// Interaction logic for AddPerson.xaml
+    /// Window child for HR type window
     /// </summary>
     public partial class AddPerson : Window
     {
@@ -25,7 +25,9 @@ namespace EnAruhazam
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Add logic
+        /// </summary>
         private void AddPer_Click(object sender, RoutedEventArgs e)
         {
             try

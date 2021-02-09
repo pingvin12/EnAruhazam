@@ -27,7 +27,9 @@ namespace EnAruhazam
             LoadData();
         }
 
-
+        /// <summary>
+        /// Loads all shifts
+        /// </summary>
         private void LoadData()
         {
 
@@ -52,7 +54,9 @@ namespace EnAruhazam
                 con.Close();
             }
         }
-
+        /// <summary>
+        /// Loads shifts based on specified date | Currently returns error
+        /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))

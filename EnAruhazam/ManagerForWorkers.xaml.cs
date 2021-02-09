@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 namespace EnAruhazam
 {
     /// <summary>
-    /// Interaction logic for ManagerForWorkers.xaml
+    /// Home page for workers
     /// </summary>
     public partial class ManagerForWorkers : Window
     {

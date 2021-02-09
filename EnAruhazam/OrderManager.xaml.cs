@@ -27,7 +27,9 @@ namespace EnAruhazam
             LoadProducts();
         }
 
-
+        /// <summary>
+        /// Loads all base values from dbo.Product
+        /// </summary>
         void LoadProducts()
         {
             using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
@@ -41,7 +43,9 @@ namespace EnAruhazam
                 ProductsGrid.ItemsSource = loadProducts.Tables[0].DefaultView;
             }
         }
-
+        /// <summary>
+        /// removes desired product from table
+        /// </summary>
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
             using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
@@ -62,7 +66,9 @@ namespace EnAruhazam
                 con.Close();
             }
         }
-
+        /// <summary>
+        /// Change window child if necessary
+        /// </summary>
         private void changeWindowChild(Window window)
         {
             AddDisplay.Children.Clear();
@@ -73,7 +79,9 @@ namespace EnAruhazam
             this.AddDisplay.Children.Add(content as UIElement);
         }
 
-
+        /// <summary>
+        /// Adds desired product, but if the children count is not equals zero then we refresh the page
+        /// </summary>
         private void Add_Click(object sender, RoutedEventArgs e)
         {
 

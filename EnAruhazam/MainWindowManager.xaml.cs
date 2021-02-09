@@ -21,30 +21,61 @@ namespace EnAruhazam
     /// </summary>
     public partial class MainWindowManager : Window
     {
-        
 
-
-    public MainWindowManager(string SignedInUser)
+        public static Button[] mainParentButtons = new Button[3];
+        public static Button[] mainChildButtons = new Button[2];
+        public MainAdminWindowLogic mawl = new MainAdminWindowLogic(null,null,null,null);
+        /// <summary>
+        /// Set a constructor so we can check who actually logged in.
+        /// </summary>
+        public MainWindowManager(string SignedInUser)
         {
             InitializeComponent();
-            
+
             UserLoggedInAs.Content = "Bejelentkezve mint: " + SignedInUser;
-            
+            InitContent();
             LoadCurrent();
-            
+             
+
+
         }
 
+       
+      //Init window content
+        void InitContent()
+        {
+            mainParentButtons[0] = EM;
+            mainParentButtons[1] = OM;
+            mainParentButtons[2] = HR;
+            mainChildButtons[0] = Persons;
+            mainChildButtons[1] = Shifts;
 
+            mawl = new MainAdminWindowLogic(
+
+            mainParentButtons,
+            Back,
+               mainChildButtons,
+               ContentDisplay
+               );
+        }
 
        
+       
 
-        //Az ablak bezárásakor meg kell győződnünk, hogy tényleg becsuktuk-e.
+
+
+        /// <summary>
+        /// Checking if we closed the window
+        /// </summary>
         protected override void OnClosed(EventArgs e)
         {
 
             base.OnClosed(e);
             Application.Current.Shutdown();
         }
+        /// <summary>
+        /// Loading all traffic data
+        /// </summary>
         public void LoadCurrent()
         {
            SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
@@ -54,6 +85,11 @@ namespace EnAruhazam
             //Forgalom lekérése a mai napra
             DataSet currentstraffic = MSSQLHelper.NewConnection("EnAruhazam", "SELECT date, time, total FROM dbo.Traffic ORDER BY date ASC");
             CurrentTraffic.DataContext = currentstraffic.Tables[0].DefaultView;
+
+            DataSet allnotifs = MSSQLHelper.NewConnection("EnAruhazam", "SELECT TITLE, DESCRIPTION, DATE FROM dbo.Notifications");
+
+            NotificationPanel.DataContext = allnotifs.Tables[0].DefaultView;
+
             con.Close();
 
 
@@ -62,12 +98,17 @@ namespace EnAruhazam
 
 
 
-        
 
+        /// <summary>
+        /// Setting fullscreen options
+        /// </summary>
         private void FullScreen_Checked(object sender, RoutedEventArgs e)
         {
             Options.setWindowToFullscreen(true, this);
         }
+        /// <summary>
+        /// Setting fullscreen options
+        /// </summary>
         private void FullScreen_Unchecked(object sender, RoutedEventArgs e)
         {
             Options.setWindowToFullscreen(false, this);
@@ -77,70 +118,47 @@ namespace EnAruhazam
         {
 
         }
-
-        private void changeWindowChild(Window window)
-        {
-            EM.Visibility = Visibility.Hidden;
-            OM.Visibility = Visibility.Hidden;
-            HR.Visibility = Visibility.Hidden;
-            Back.Visibility = Visibility.Visible;
-            Persons.Visibility = Visibility.Hidden;
-            Shifts.Visibility = Visibility.Hidden;
-            ContentDisplay.Children.Clear();
-
-            object content = window.Content;
-            window.Content = null;
-            window.Close();
-            this.ContentDisplay.Children.Add(content as UIElement);
-        }
-
-        private void revertWindowChild()
-        {
-            EM.Visibility = Visibility.Visible;
-            OM.Visibility = Visibility.Visible;
-            HR.Visibility = Visibility.Visible;
-            Back.Visibility = Visibility.Hidden;
-            Shifts.Visibility = Visibility.Hidden;
-            Persons.Visibility = Visibility.Hidden;
-            ContentDisplay.Children.Clear();
-        }
-
-       private void toHR()
-        {
-            EM.Visibility = Visibility.Hidden;
-            OM.Visibility = Visibility.Hidden;
-            HR.Visibility = Visibility.Hidden;
-            Back.Visibility = Visibility.Visible;
-            Shifts.Visibility = Visibility.Visible;
-            Persons.Visibility = Visibility.Visible;
-            ContentDisplay.Children.Clear();
-        }
-
+       
+        /// <summary>
+        /// If we are done with managing we can revert all our child values back to normal
+        /// </summary>
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            revertWindowChild();
+            mawl.RevertWindowChild(mainParentButtons,mainChildButtons);
+            
 
         }
-
-            private void Button_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Instantiates a new peoplemanager window
+        /// </summary>
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             PeopleManager peopleManager = new PeopleManager();
-            changeWindowChild(peopleManager);
+            
+            mawl.ChangeWindowChild(peopleManager);
         }
-
+        /// <summary>
+        /// Instantiates a new edatmanager window
+        /// </summary>
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             EdatManager edatManager = new EdatManager();
-            changeWindowChild(edatManager);
+            
+            mawl.ChangeWindowChild(edatManager);
         }
-
+        /// <summary>
+        /// Instantiates a new ordermanager window
+        /// </summary>
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             OrderManager orderManager = new OrderManager();
-            changeWindowChild(orderManager);
+            mawl.ChangeWindowChild(orderManager);
+            
         }
 
-       
+        /// <summary>
+        /// Get traffic based on search value
+        /// </summary>
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             string curSearch = SearchContext.Text;
@@ -148,7 +166,7 @@ namespace EnAruhazam
             try
             {
 
-                //Forgalom lekérése keresés szerint
+                
                 DataSet searchtraffic = MSSQLHelper.NewConnection("EnAruhazam", "SELECT date, time, total FROM dbo.Traffic WHERE date = '" + curSearch + "' ORDER BY date ASC");
                 CurrentTraffic.DataContext = searchtraffic.Tables[0].DefaultView;
             }catch(SqlException ex)
@@ -158,14 +176,15 @@ namespace EnAruhazam
             
             con.Close();
         }
-
+        /// <summary>
+        /// Get today's traffic
+        /// </summary>
         private void GetTodaysTraffic(object sender, RoutedEventArgs e)
         {
             SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
 
 
 
-            //Forgalom lekérése a mai napra
 
             DataSet todaystraffic = MSSQLHelper.NewConnection("EnAruhazam", "SELECT date, time, total FROM dbo.Traffic WHERE date = CAST( GETDATE() AS Date )  ORDER BY date ASC");
 
@@ -174,16 +193,33 @@ namespace EnAruhazam
 
            
         }
-
+        /// <summary>
+        /// Instantiates a new shiftmanager window
+        /// </summary>
         private void Shifts_Click(object sender, RoutedEventArgs e)
         {
             ShiftManager shiftManager = new ShiftManager();
-            changeWindowChild(shiftManager);
+            //changeWindowChild(shiftManager);
+            mawl.ChangeWindowChild(shiftManager);
         }
-
+        /// <summary>
+        /// Set window child to hr
+        /// </summary>
         private void HR_Click(object sender, RoutedEventArgs e)
         {
-            toHR();
+            // toHR();
+            mawl.AddSubmenu(null, null);
+        }
+
+        private void NotificationPanel_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+  
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+           //delete notification
         }
     }
 

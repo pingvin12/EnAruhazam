@@ -163,6 +163,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MainAdminWindowLogic.cs" />
     <Compile Include="ManagerForWorkers.xaml.cs">
       <DependentUpon>ManagerForWorkers.xaml</DependentUpon>
     </Compile>
