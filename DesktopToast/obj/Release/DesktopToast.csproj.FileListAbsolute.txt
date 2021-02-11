@@ -1,0 +1,11 @@
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DesktopToast\bin\Release\DesktopToast.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DesktopToast\bin\Release\DesktopToast.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DesktopToast\bin\Release\DesktopToast.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DesktopToast\bin\Release\System.Runtime.WindowsRuntime.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DesktopToast\bin\Release\Windows.winmd
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DesktopToast\bin\Release\System.Runtime.WindowsRuntime.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DesktopToast\obj\Release\DesktopToast.csprojAssemblyReference.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DesktopToast\obj\Release\DesktopToast.csproj.CoreCompileInputs.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DesktopToast\obj\Release\DesktopToast.csproj.CopyComplete
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DesktopToast\obj\Release\DesktopToast.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DesktopToast\obj\Release\DesktopToast.pdb
