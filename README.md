@@ -8,7 +8,6 @@ Simply change debugmode value to true in EnAruhazam.exe.config
 # Builds
 [Appveyor](https://ci.appveyor.com/project/pingvin12/enaruhazam)
 
-
 # Login accounts
 [manager]
 Username: fny
