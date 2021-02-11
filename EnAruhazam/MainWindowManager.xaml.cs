@@ -22,17 +22,23 @@ namespace EnAruhazam
     public partial class MainWindowManager : Window
     {
 
+        public LoadConfig lc = new LoadConfig();
+
         public static Button[] mainParentButtons = new Button[3];
         public static Button[] mainChildButtons = new Button[2];
         public MainAdminWindowLogic mawl = new MainAdminWindowLogic(null,null,null,null);
+        public static DataSet notifdata = new DataSet();
+        public static NotificationHandler nh = new NotificationHandler();
         /// <summary>
         /// Set a constructor so we can check who actually logged in.
         /// </summary>
         public MainWindowManager(string SignedInUser)
         {
             InitializeComponent();
+            
 
             UserLoggedInAs.Content = "Bejelentkezve mint: " + SignedInUser;
+            Userlgdebug.Content = SignedInUser;
             InitContent();
             LoadCurrent();
              
@@ -50,18 +56,18 @@ namespace EnAruhazam
             mainChildButtons[0] = Persons;
             mainChildButtons[1] = Shifts;
 
+           /// <!-- Load Debug mode -->
+            lc.Load(debugw,this);
+            
+
             mawl = new MainAdminWindowLogic(
 
-            mainParentButtons,
-            Back,
+               mainParentButtons,
+               Back,
                mainChildButtons,
                ContentDisplay
                );
         }
-
-       
-       
-
 
 
         /// <summary>
@@ -82,14 +88,9 @@ namespace EnAruhazam
 
 
             
-            //Forgalom lekérése a mai napra
+            //Get today's traffic
             DataSet currentstraffic = MSSQLHelper.NewConnection("EnAruhazam", "SELECT date, time, total FROM dbo.Traffic ORDER BY date ASC");
             CurrentTraffic.DataContext = currentstraffic.Tables[0].DefaultView;
-
-            DataSet allnotifs = MSSQLHelper.NewConnection("EnAruhazam", "SELECT TITLE, DESCRIPTION, DATE FROM dbo.Notifications");
-
-            NotificationPanel.DataContext = allnotifs.Tables[0].DefaultView;
-
             con.Close();
 
 
@@ -99,21 +100,7 @@ namespace EnAruhazam
 
 
 
-        /// <summary>
-        /// Setting fullscreen options
-        /// </summary>
-        private void FullScreen_Checked(object sender, RoutedEventArgs e)
-        {
-            Options.setWindowToFullscreen(true, this);
-        }
-        /// <summary>
-        /// Setting fullscreen options
-        /// </summary>
-        private void FullScreen_Unchecked(object sender, RoutedEventArgs e)
-        {
-            Options.setWindowToFullscreen(false, this);
-        }
-
+    
         private void RichTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
@@ -199,7 +186,6 @@ namespace EnAruhazam
         private void Shifts_Click(object sender, RoutedEventArgs e)
         {
             ShiftManager shiftManager = new ShiftManager();
-            //changeWindowChild(shiftManager);
             mawl.ChangeWindowChild(shiftManager);
         }
         /// <summary>
@@ -207,19 +193,23 @@ namespace EnAruhazam
         /// </summary>
         private void HR_Click(object sender, RoutedEventArgs e)
         {
-            // toHR();
             mawl.AddSubmenu(null, null);
         }
+        
+     
 
-        private void NotificationPanel_SelectionChanged(object sender, SelectionChangedEventArgs e)
+      
+        private void AlterPermissions_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-  
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void TestNotification_Click(object sender, RoutedEventArgs e)
         {
-           //delete notification
+            //error type
+            var errortype = NotificationHandler.NotifType.TEST;
+            //delete notification
+            nh.DoNotification("Teszt Értesítés fejléc", "Teszt értesítés szöveg", errortype);
         }
     }
 

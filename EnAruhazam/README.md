@@ -1,7 +1,16 @@
 # EnAruhazam
  WPF C# Application with SQL Database
 
+# FAQ
+- How can i get into DEBUG mode?
+Simply change debugmode value to true in EnAruhazam.exe.config
 
-Username for login: fny
-and for password: 123
 
+# Login accounts
+[manager]
+Username: fny
+password: 123
+
+[worker]
+Email: fekete.laci@gmail.com
+password: F4k2pppr

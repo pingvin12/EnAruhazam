@@ -30,25 +30,24 @@ namespace EnAruhazam
         /// <summary>
         /// signed in username
         /// </summary>
-        public partial class signedInUser
+        public partial class SignedInUser
         {
-            public string userName { get; set; }
+            public string UserName { get; set; }
         }
         /// <summary>
         /// function to connect as a manager
         /// </summary>
-        private void connectasManager()
+        private void ConnectasManager()
         {
-            SqlConnection sqlConnection = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
             string query = "Select FullName From dbo.Managers Where Name = '" + name.Text.Trim() + "' AND Password = '" + pass.Password.Trim() + "'";
             DataSet getUser = MSSQLHelper.NewConnection("EnAruhazam", query);
 
-            signedInUser user = new signedInUser();
+            SignedInUser user = new SignedInUser();
             
             if (getUser.Tables[0].Rows.Count == 1)
             {
-                user.userName = getUser.Tables[0].Rows[0][0].ToString();
-                MainWindowManager manager = new MainWindowManager(user.userName);
+                user.UserName = getUser.Tables[0].Rows[0][0].ToString();
+                MainWindowManager manager = new MainWindowManager(user.UserName);
 
 
                 manager.Show();
@@ -62,18 +61,17 @@ namespace EnAruhazam
         /// <summary>
         /// function to connect as a worker
         /// </summary>
-        private void connectasWorker()
+        private void ConnectasWorker()
         {
-            SqlConnection sqlConnection = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
-            string query = "Select Name From dbo.Workers Where Email = '" + name.Text.Trim() + "' AND Password = '" + pass.Password.Trim() + "' AND isActive=1";
+           string query = "Select Name From dbo.Workers Where Email = '" + name.Text.Trim() + "' AND Password = '" + pass.Password.Trim() + "' AND isActive=1";
             DataSet getUser = MSSQLHelper.NewConnection("EnAruhazam", query);
 
-            signedInUser user = new signedInUser();
+            SignedInUser user = new SignedInUser();
            
             if (getUser.Tables[0].Rows.Count == 1)
             {
-                user.userName = getUser.Tables[0].Rows[0][0].ToString();
-                ManagerForWorkers wmanager = new ManagerForWorkers(user.userName);
+                user.UserName = getUser.Tables[0].Rows[0][0].ToString();
+                ManagerForWorkers wmanager = new ManagerForWorkers(user.UserName);
 
 
                 wmanager.Show();
@@ -87,32 +85,32 @@ namespace EnAruhazam
         /// <summary>
         /// Check if the user is a manager or not
         /// </summary>
-        private void submit_Click(object sender, RoutedEventArgs e)
+        private void Submit_Click(object sender, RoutedEventArgs e)
         {
-            if (isManager.IsChecked == true)
+            if (IsManager.IsChecked == true)
             {
                 
-                connectasManager();
+                ConnectasManager();
 
 
             }
             else {
 
-                connectasWorker();
+                ConnectasWorker();
             }
 
         }
         /// <summary>
         /// Managers use usernames while workers will use an email to login.
         /// </summary>
-        private void isManager_Checked(object sender, RoutedEventArgs e)
+        private void IsManager_Checked(object sender, RoutedEventArgs e)
         {
             username.Content = "Felhasználónév:";
         }
         /// <summary>
         /// email format for workers
         /// </summary>
-        private void isManager_Unchecked(object sender, RoutedEventArgs e)
+        private void IsManager_Unchecked(object sender, RoutedEventArgs e)
         {
             username.Content = "Email:";
         }

@@ -56,5 +56,10 @@ namespace EnAruhazam
             }
 
         }
+
+        private void Riports_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
     }
 }

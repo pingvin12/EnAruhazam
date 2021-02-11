@@ -15,8 +15,8 @@
 			
 			<Label  Content="Jelszó:"></Label>
 			<PasswordBox Name="pass" FontSize="15" ></PasswordBox>
-			<CheckBox Name="isManager" Content="Vezető" Checked="isManager_Checked" Unchecked="isManager_Unchecked"/>
-			<Button Margin="40" Name="submit" Content="Bejelentkezés" Width="100" Click="submit_Click"></Button>
+			<CheckBox Name="IsManager" Content="Vezető" Checked="IsManager_Checked" Unchecked="IsManager_Unchecked"/>
+			<Button Margin="40" Name="Submit" Content="Bejelentkezés" Width="100" Click="Submit_Click"></Button>
 	</StackPanel>
 	</Border>
 </Window>

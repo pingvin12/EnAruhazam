@@ -8,6 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>EnAruhazam</RootNamespace>
     <AssemblyName>EnAruhazam</AssemblyName>
+    <targetplatformversion>10.0</targetplatformversion>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -115,6 +116,9 @@
     <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.10.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.10\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
+    <Reference Include="NotificationsExtensions.Win10.NETCore">
+      <HintPath>..\..\..\..\..\Desktop\DesktopToast-master\packages\NotificationsExtensions.Win10.14332.0.0\lib\dotnet\NotificationsExtensions.Win10.NETCore.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -163,10 +167,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="LoadConfig.cs" />
     <Compile Include="MainAdminWindowLogic.cs" />
     <Compile Include="ManagerForWorkers.xaml.cs">
       <DependentUpon>ManagerForWorkers.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NotificationActivator.cs" />
+    <Compile Include="NotificationHandler.cs" />
     <Compile Include="ShiftManager.xaml.cs">
       <DependentUpon>ShiftManager.xaml</DependentUpon>
     </Compile>
@@ -229,7 +236,6 @@
       <DependentUpon>MainWindowManager.xaml</DependentUpon>
     </Compile>
     <Compile Include="MSSQLHelper.cs" />
-    <Compile Include="Options.cs" />
     <Compile Include="OrderManager.xaml.cs">
       <DependentUpon>OrderManager.xaml</DependentUpon>
     </Compile>
@@ -287,6 +293,22 @@
       <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
+    <PublishFile Include="Windows">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesktopToast\DesktopToast.csproj">
+      <Project>{b8d704d5-fb0c-4c2d-8189-72c6649ba157}</Project>
+      <Name>DesktopToast</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
