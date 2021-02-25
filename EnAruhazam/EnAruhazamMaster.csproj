@@ -54,6 +54,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
@@ -65,7 +66,7 @@
     <ManifestKeyFile>EnAruhazam_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -168,43 +169,17 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="LoadConfig.cs" />
-    <Compile Include="MainAdminWindowLogic.cs" />
+    <Compile Include="Logic\MainAdminWindowLogic.cs" />
     <Compile Include="ManagerForWorkers.xaml.cs">
       <DependentUpon>ManagerForWorkers.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NotificationActivator.cs" />
-    <Compile Include="NotificationHandler.cs" />
-    <Compile Include="ShiftManager.xaml.cs">
-      <DependentUpon>ShiftManager.xaml</DependentUpon>
-    </Compile>
-    <Page Include="AddOrder.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="AddPerson.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EdatManager.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AddOrder.xaml.cs">
-      <DependentUpon>AddOrder.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AddPerson.xaml.cs">
-      <DependentUpon>AddPerson.xaml</DependentUpon>
-    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="EdatManager.xaml.cs">
-      <DependentUpon>EdatManager.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -218,29 +193,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="OrderManager.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PeopleManager.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ShiftManager.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindowManager.xaml.cs">
       <DependentUpon>MainWindowManager.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MSSQLHelper.cs" />
-    <Compile Include="OrderManager.xaml.cs">
-      <DependentUpon>OrderManager.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PeopleManager.xaml.cs">
-      <DependentUpon>PeopleManager.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -308,6 +264,22 @@
     <ProjectReference Include="..\DesktopToast\DesktopToast.csproj">
       <Project>{b8d704d5-fb0c-4c2d-8189-72c6649ba157}</Project>
       <Name>DesktopToast</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EnAruhazam.DataAccess\EnAruhazam.DataAccess.csproj">
+      <Project>{cc1464bf-c6d5-4932-a659-550e17bc813a}</Project>
+      <Name>EnAruhazam.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EnAruhazam.MenuControl\EnAruhazam.MenuControl.csproj">
+      <Project>{8642f4ff-406f-4eff-af0f-dc8ff6600c6d}</Project>
+      <Name>EnAruhazam.MenuControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EnAruhazam.NotificationHandler\EnAruhazam.NotificationHandler.csproj">
+      <Project>{18fa63d7-673b-4376-a342-b4d03f5157d7}</Project>
+      <Name>EnAruhazam.NotificationHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EnAruhazam.Updater\EnAruhazam.Updater.csproj">
+      <Project>{d1e5f605-a9b0-473b-8b6d-f69e9ab59a70}</Project>
+      <Name>EnAruhazam.Updater</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

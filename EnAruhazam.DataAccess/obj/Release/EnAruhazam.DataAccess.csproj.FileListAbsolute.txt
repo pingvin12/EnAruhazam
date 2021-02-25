@@ -1,0 +1,16 @@
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Release\EnAruhazam.DataAccess.dll.config
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Release\EnAruhazam.DataAccess.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Release\EnAruhazam.DataAccess.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Release\System.Configuration.ConfigurationManager.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Release\System.Security.AccessControl.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Release\System.Security.Permissions.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Release\System.Security.Principal.Windows.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Release\System.Configuration.ConfigurationManager.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Release\System.Security.AccessControl.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Release\System.Security.Permissions.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Release\System.Security.Principal.Windows.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\obj\Release\EnAruhazam.DataAccess.csprojAssemblyReference.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\obj\Release\EnAruhazam.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\obj\Release\EnAruhazam.DataAccess.csproj.CopyComplete
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\obj\Release\EnAruhazam.DataAccess.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\obj\Release\EnAruhazam.DataAccess.pdb

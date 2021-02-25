@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
+using EnAruhazam.DataAccess;
 using System.Data;
 
 namespace EnAruhazam

@@ -21,14 +21,12 @@ namespace EnAruhazam
         public int WindowWidth,WindowHeight;
         
 
-        public  LoadConfig()
-        {
-           
-        }
+ 
 
         public void Load(Grid debuggrid, Window window)
         {
             this.Debuggrid = debuggrid;
+            
             // Read a particular key from the config file 
             debugmode = bool.Parse(ConfigurationManager.AppSettings.Get("debugmode"));
             IsFullscreen = bool.Parse(ConfigurationManager.AppSettings.Get("fullscreen"));

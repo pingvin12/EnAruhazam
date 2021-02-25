@@ -13,7 +13,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using EnAruhazam.DataAccess;
+using EnAruhazam.NotificationHandler;
+using EnAruhazam.MenuControl;
 namespace EnAruhazam
 {
     /// <summary>
@@ -21,33 +23,26 @@ namespace EnAruhazam
     /// </summary>
     public partial class MainWindowManager : Window
     {
-
         public LoadConfig lc = new LoadConfig();
-
         public static Button[] mainParentButtons = new Button[3];
         public static Button[] mainChildButtons = new Button[2];
         public MainAdminWindowLogic mawl = new MainAdminWindowLogic(null,null,null,null);
         public static DataSet notifdata = new DataSet();
-        public static NotificationHandler nh = new NotificationHandler();
+        public static NotificationManager nh = new NotificationManager();
         /// <summary>
         /// Set a constructor so we can check who actually logged in.
         /// </summary>
         public MainWindowManager(string SignedInUser)
         {
             InitializeComponent();
-            
-
             UserLoggedInAs.Content = "Bejelentkezve mint: " + SignedInUser;
             Userlgdebug.Content = SignedInUser;
             InitContent();
             LoadCurrent();
-             
-
-
         }
-
-       
-      //Init window content
+        ///<summary>
+        ///Init window content
+        ///</summary>
         void InitContent()
         {
             mainParentButtons[0] = EM;
@@ -68,8 +63,6 @@ namespace EnAruhazam
                ContentDisplay
                );
         }
-
-
         /// <summary>
         /// Checking if we closed the window
         /// </summary>
@@ -95,23 +88,16 @@ namespace EnAruhazam
 
 
         }
-
-
-
-
-
-    
         private void RichTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
-       
         /// <summary>
         /// If we are done with managing we can revert all our child values back to normal
         /// </summary>
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            mawl.RevertWindowChild(mainParentButtons,mainChildButtons);
+            mawl.RevertWindowChild();
             
 
         }
@@ -193,27 +179,21 @@ namespace EnAruhazam
         /// </summary>
         private void HR_Click(object sender, RoutedEventArgs e)
         {
-            mawl.AddSubmenu(null, null);
+            mawl.AddSubmenu();
         }
-        
-     
-
-      
         private void AlterPermissions_Click(object sender, RoutedEventArgs e)
         {
 
         }
-
+        /// <summary>
+        /// Debug mode only : Instantiates test notification.
+        /// </summary>
         private void TestNotification_Click(object sender, RoutedEventArgs e)
         {
             //error type
-            var errortype = NotificationHandler.NotifType.TEST;
+            var errortype = NotificationManager.NotifType.TEST;
             //delete notification
             nh.DoNotification("Teszt Értesítés fejléc", "Teszt értesítés szöveg", errortype);
         }
     }
-
-
-
-
 }
