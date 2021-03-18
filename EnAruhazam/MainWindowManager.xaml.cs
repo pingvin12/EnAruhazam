@@ -18,17 +18,13 @@ using EnAruhazam.NotificationHandler;
 using EnAruhazam.MenuControl;
 namespace EnAruhazam
 {
+
     /// <summary>
     /// Interaction logic for MainWindowManager.xaml
     /// </summary>
     public partial class MainWindowManager : Window
     {
-        public LoadConfig lc = new LoadConfig();
-        public static Button[] mainParentButtons = new Button[3];
-        public static Button[] mainChildButtons = new Button[2];
-        public MainAdminWindowLogic mawl = new MainAdminWindowLogic(null,null,null,null);
-        public static DataSet notifdata = new DataSet();
-        public static NotificationManager nh = new NotificationManager();
+      
         /// <summary>
         /// Set a constructor so we can check who actually logged in.
         /// </summary>
@@ -45,23 +41,27 @@ namespace EnAruhazam
         ///</summary>
         void InitContent()
         {
-            mainParentButtons[0] = EM;
-            mainParentButtons[1] = OM;
-            mainParentButtons[2] = HR;
-            mainChildButtons[0] = Persons;
-            mainChildButtons[1] = Shifts;
+            GlobalTypes.mainParentButtons[0] = EM;
+            GlobalTypes.mainParentButtons[1] = OM;
+            GlobalTypes.mainParentButtons[2] = HR;
+            GlobalTypes.mainChildButtons[0] = Persons;
+            GlobalTypes.mainChildButtons[1] = Shifts;
 
-           /// <!-- Load Debug mode -->
-            lc.Load(debugw,this);
-            
+            /// <!-- Load Debug mode -->
+            GlobalTypes.lc.Load(debugw,this);
 
-            mawl = new MainAdminWindowLogic(
 
-               mainParentButtons,
+            GlobalTypes.mawl = new MainAdminWindowLogic(
+
+               GlobalTypes.mainParentButtons,
                Back,
-               mainChildButtons,
+               GlobalTypes.mainChildButtons,
                ContentDisplay
                );
+
+            GlobalTypes.nh.DoNotification("Lejárt Termékek összege", $"Lejárt termékek összege eléri a  következő számot: {OrderManager.expiredProducts.Tables[0].Rows.Count}!", NotificationManager.NotifType.EXPIRED_PROD);
+            GlobalTypes.nh.DoNotification("Ebben a hónapban kitakarított készülékek", $"Ebben a hónapban kitakarított készülékek száma: {EdatManager.notcleanedMachines.Tables[0].Rows.Count}!", NotificationManager.NotifType.MACHINE_NOT_CLEANED);
+
         }
         /// <summary>
         /// Checking if we closed the window
@@ -97,7 +97,7 @@ namespace EnAruhazam
         /// </summary>
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            mawl.RevertWindowChild();
+            GlobalTypes.mawl.RevertWindowChild();
             
 
         }
@@ -107,8 +107,8 @@ namespace EnAruhazam
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             PeopleManager peopleManager = new PeopleManager();
-            
-            mawl.ChangeWindowChild(peopleManager);
+
+            GlobalTypes.mawl.ChangeWindowChild(peopleManager);
         }
         /// <summary>
         /// Instantiates a new edatmanager window
@@ -116,8 +116,8 @@ namespace EnAruhazam
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             EdatManager edatManager = new EdatManager();
-            
-            mawl.ChangeWindowChild(edatManager);
+
+            GlobalTypes.mawl.ChangeWindowChild(edatManager);
         }
         /// <summary>
         /// Instantiates a new ordermanager window
@@ -125,7 +125,7 @@ namespace EnAruhazam
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             OrderManager orderManager = new OrderManager();
-            mawl.ChangeWindowChild(orderManager);
+            GlobalTypes.mawl.ChangeWindowChild(orderManager);
             
         }
 
@@ -172,14 +172,14 @@ namespace EnAruhazam
         private void Shifts_Click(object sender, RoutedEventArgs e)
         {
             ShiftManager shiftManager = new ShiftManager();
-            mawl.ChangeWindowChild(shiftManager);
+            GlobalTypes.mawl.ChangeWindowChild(shiftManager);
         }
         /// <summary>
         /// Set window child to hr
         /// </summary>
         private void HR_Click(object sender, RoutedEventArgs e)
         {
-            mawl.AddSubmenu();
+            GlobalTypes.mawl.AddSubmenu();
         }
         private void AlterPermissions_Click(object sender, RoutedEventArgs e)
         {
@@ -193,7 +193,7 @@ namespace EnAruhazam
             //error type
             var errortype = NotificationManager.NotifType.TEST;
             //delete notification
-            nh.DoNotification("Teszt Értesítés fejléc", "Teszt értesítés szöveg", errortype);
+            GlobalTypes.nh.DoNotification("Teszt Értesítés fejléc", "Teszt értesítés szöveg", errortype);
         }
     }
 }

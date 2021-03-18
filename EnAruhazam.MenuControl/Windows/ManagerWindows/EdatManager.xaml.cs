@@ -27,6 +27,9 @@ namespace EnAruhazam.MenuControl
             loadData();
         }
 
+        public static DataSet notcleanedMachines = MSSQLHelper.NewConnection("SELECT Riport_Date,dbo.Equipments.EquipmentName FROM dbo.Riports INNER JOIN dbo.Equipments ON dbo.Riports.EquipmentID=dbo.Equipments.Id WHERE Description = 'Kitakaritva' AND DATEPART(mm, Riport_date) < DATEPART(mm,  GETDATE())");
+
+
 
         /// <summary>
         /// load values from specified table

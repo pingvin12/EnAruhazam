@@ -14,6 +14,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using EnAruhazam.DataAccess;
+using EnAruhazam.NotificationHandler;
+using EnAruhazam;
 namespace EnAruhazam.MenuControl
 {
     /// <summary>
@@ -26,6 +28,10 @@ namespace EnAruhazam.MenuControl
             InitializeComponent();
             LoadProducts();
         }
+
+
+        public static DataSet expiredProducts = MSSQLHelper.NewConnection("SELECT ProductName, ExpirationDate FROM dbo.Product WHERE ExpirationDate < GETDATE()");
+
 
         /// <summary>
         /// Loads all base values from dbo.Product
@@ -41,6 +47,13 @@ namespace EnAruhazam.MenuControl
                 DataSet loadProducts = MSSQLHelper.NewConnection(CmdString);
 
                 ProductsGrid.ItemsSource = loadProducts.Tables[0].DefaultView;
+
+
+               
+
+                
+               
+
             }
         }
         /// <summary>

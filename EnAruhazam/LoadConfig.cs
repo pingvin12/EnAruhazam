@@ -47,7 +47,7 @@ namespace EnAruhazam
 
             this.Debuggrid = debuggrid;
             /// <summary> Decapracated </summary>
-            // Read a particular key from the config file 
+            /// Read a particular key from the config file 
             ///debugmode = bool.Parse(ConfigurationManager.AppSettings.Get("debugmode"));
             ///IsFullscreen = bool.Parse(ConfigurationManager.AppSettings.Get("fullscreen"));
             ///
