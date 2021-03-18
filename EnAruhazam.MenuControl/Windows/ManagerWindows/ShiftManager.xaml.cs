@@ -33,22 +33,22 @@ namespace EnAruhazam.MenuControl
         private void LoadData()
         {
 
-            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+            using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
 
             {
 
                 string CmdString = "SELECT dbo.Workers.Name,ShiftStart,ShiftEnd,WorkerPos FROM dbo.Shifts INNER JOIN dbo.Workers ON dbo.Shifts.WorkerId=dbo.Workers.Id WHERE WorkerPos = 'Árufeltölto' OR WorkerPos = 'Pénztáros'";
-                DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
+                DataSet loadData = MSSQLHelper.NewConnection( CmdString);
 
                 ShiftDisplay.ItemsSource = loadData.Tables[0].DefaultView;
                 con.Close();
             }
-            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+            using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
 
             {
 
                 string CmdString = "SELECT dbo.Workers.Name, ShiftStart,ShiftEnd,Description from dbo.Schedules INNER JOIN dbo.Workers ON dbo.Schedules.WorkerId=dbo.Workers.Id";
-                DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
+                DataSet loadData = MSSQLHelper.NewConnection(CmdString);
 
                 applications.ItemsSource = loadData.Tables[0].DefaultView;
                 con.Close();
@@ -59,10 +59,10 @@ namespace EnAruhazam.MenuControl
         /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+            using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
             {
                 string CmdString = "SELECT dbo.Workers.Name,ShiftStart,ShiftEnd,WorkerPos FROM dbo.Shifts INNER JOIN dbo.Workers ON dbo.Shifts.WorkerId=dbo.Workers.Id WHERE ShiftStart = '" + ShiftDate.SelectedDate.Value.ToString("YYYY-MM-DDTHH:MM:SS") + "'";
-                DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
+                DataSet loadData = MSSQLHelper.NewConnection(CmdString);
 
                 ShiftDisplay.ItemsSource = loadData.Tables[0].DefaultView;
                 con.Close();

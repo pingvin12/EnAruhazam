@@ -26,12 +26,12 @@ namespace EnAruhazam.MenuControl
         private void LoadData()
         {
            
-            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+            using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
 
             {
 
                 string CmdString = "SELECT Name,DateJoined,Email,Phone,Id FROM dbo.Workers";
-                DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
+                DataSet loadData = MSSQLHelper.NewConnection(CmdString);
 
                 PeopleGrid.ItemsSource = loadData.Tables[0].DefaultView;
                 con.Close();
@@ -80,7 +80,7 @@ namespace EnAruhazam.MenuControl
 
                 try
             {
-                    using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+                    using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
                        
                 {
                         

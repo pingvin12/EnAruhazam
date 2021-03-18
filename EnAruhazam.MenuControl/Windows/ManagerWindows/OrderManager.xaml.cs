@@ -32,13 +32,13 @@ namespace EnAruhazam.MenuControl
         /// </summary>
         void LoadProducts()
         {
-            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+            using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
 
             {
 
                 string CmdString = "SELECT ProductName, ExpirationDate, Row, Spot, Price, Id FROM dbo.Product";
 
-                DataSet loadProducts = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
+                DataSet loadProducts = MSSQLHelper.NewConnection(CmdString);
 
                 ProductsGrid.ItemsSource = loadProducts.Tables[0].DefaultView;
             }
@@ -48,7 +48,7 @@ namespace EnAruhazam.MenuControl
         /// </summary>
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+            using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
 
             {
 

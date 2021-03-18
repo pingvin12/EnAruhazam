@@ -41,7 +41,7 @@ namespace EnAruhazam
         private void ConnectasManager()
         {
             string query = "Select FullName From dbo.Managers Where Name = '" + name.Text.Trim() + "' AND Password = '" + pass.Password.Trim() + "'";
-            DataSet getUser = MSSQLHelper.NewConnection("EnAruhazam", query);
+            DataSet getUser = MSSQLHelper.NewConnection(query);
 
             SignedInUser user = new SignedInUser();
             
@@ -65,7 +65,7 @@ namespace EnAruhazam
         private void ConnectasWorker()
         {
            string query = "Select Name From dbo.Workers Where Email = '" + name.Text.Trim() + "' AND Password = '" + pass.Password.Trim() + "' AND isActive=1";
-            DataSet getUser = MSSQLHelper.NewConnection("EnAruhazam", query);
+            DataSet getUser = MSSQLHelper.NewConnection( query);
 
             SignedInUser user = new SignedInUser();
            

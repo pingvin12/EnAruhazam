@@ -77,12 +77,12 @@ namespace EnAruhazam
         /// </summary>
         public void LoadCurrent()
         {
-           SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
+           SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr());
 
 
             
             //Get today's traffic
-            DataSet currentstraffic = MSSQLHelper.NewConnection("EnAruhazam", "SELECT date, time, total FROM dbo.Traffic ORDER BY date ASC");
+            DataSet currentstraffic = MSSQLHelper.NewConnection("SELECT date, time, total FROM dbo.Traffic ORDER BY date ASC");
             CurrentTraffic.DataContext = currentstraffic.Tables[0].DefaultView;
             con.Close();
 
@@ -135,12 +135,12 @@ namespace EnAruhazam
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             string curSearch = SearchContext.Text;
-            SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
+            SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr());
             try
             {
 
                 
-                DataSet searchtraffic = MSSQLHelper.NewConnection("EnAruhazam", "SELECT date, time, total FROM dbo.Traffic WHERE date = '" + curSearch + "' ORDER BY date ASC");
+                DataSet searchtraffic = MSSQLHelper.NewConnection("SELECT date, time, total FROM dbo.Traffic WHERE date = '" + curSearch + "' ORDER BY date ASC");
                 CurrentTraffic.DataContext = searchtraffic.Tables[0].DefaultView;
             }catch(SqlException ex)
             {
@@ -154,12 +154,12 @@ namespace EnAruhazam
         /// </summary>
         private void GetTodaysTraffic(object sender, RoutedEventArgs e)
         {
-            SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam"));
+            SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr());
 
 
 
 
-            DataSet todaystraffic = MSSQLHelper.NewConnection("EnAruhazam", "SELECT date, time, total FROM dbo.Traffic WHERE date = CAST( GETDATE() AS Date )  ORDER BY date ASC");
+            DataSet todaystraffic = MSSQLHelper.NewConnection("SELECT date, time, total FROM dbo.Traffic WHERE date = CAST( GETDATE() AS Date )  ORDER BY date ASC");
 
             CurrentTraffic.DataContext = todaystraffic.Tables[0].DefaultView;
             con.Close();

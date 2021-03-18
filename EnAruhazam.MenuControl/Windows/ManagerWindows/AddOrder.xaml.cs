@@ -32,7 +32,7 @@ namespace EnAruhazam.MenuControl
         {
             try
             {
-                using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+                using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
 
                 {
 

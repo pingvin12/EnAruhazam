@@ -20,20 +20,40 @@ namespace EnAruhazam
         public bool IsFullscreen = false;
         public int WindowWidth,WindowHeight;
         
-
- 
-
         public void Load(Grid debuggrid, Window window)
         {
+
+            var reader = XmlReader.Create("config.xml");
+            reader.ReadToFollowing("Configuration");
+            // Read keys from the config file 
+            do
+            {
+                reader.ReadToFollowing("debug");
+                reader.MoveToAttribute("value");
+                debugmode = bool.Parse(reader.Value);
+
+                reader.ReadToFollowing("fullscreen");
+                reader.MoveToAttribute("value");
+                IsFullscreen = bool.Parse(reader.Value);
+
+                reader.ReadToFollowing("windowWidth");
+                reader.MoveToAttribute("value");
+                WindowWidth = int.Parse(reader.Value);
+                reader.ReadToFollowing("windowHeight");
+                reader.MoveToAttribute("value");
+                WindowHeight = int.Parse(reader.Value);
+
+            } while (reader.ReadToFollowing("Configuration"));
+
             this.Debuggrid = debuggrid;
-            
+            /// <summary> Decapracated </summary>
             // Read a particular key from the config file 
-            debugmode = bool.Parse(ConfigurationManager.AppSettings.Get("debugmode"));
-            IsFullscreen = bool.Parse(ConfigurationManager.AppSettings.Get("fullscreen"));
-
-            WindowWidth = int.Parse(ConfigurationManager.AppSettings.Get("windowwidth"));
-            WindowHeight = int.Parse(ConfigurationManager.AppSettings.Get("windowheight"));
-
+            ///debugmode = bool.Parse(ConfigurationManager.AppSettings.Get("debugmode"));
+            ///IsFullscreen = bool.Parse(ConfigurationManager.AppSettings.Get("fullscreen"));
+            ///
+            ///WindowWidth = int.Parse(ConfigurationManager.AppSettings.Get("windowwidth"));
+            ///WindowHeight = int.Parse(ConfigurationManager.AppSettings.Get("windowheight"));
+            ///
 
             //Init settings
 
@@ -42,13 +62,13 @@ namespace EnAruhazam
 
 
             // Read all the keys from the config file
-            NameValueCollection sAll;
+            /*NameValueCollection sAll;
             sAll = ConfigurationManager.AppSettings;
 
             foreach (string s in sAll.AllKeys)
                 Console.WriteLine("Setting: " + s + " Value: " + sAll.Get(s));
 
-
+            */
         }
 
 

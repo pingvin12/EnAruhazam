@@ -33,23 +33,23 @@ namespace EnAruhazam.MenuControl
         /// </summary>
         private void loadData()
         {
-            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+            using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
 
             {
 
                 string CmdString = "SELECT EquipmentName FROM dbo.Equipments ORDER BY Id";
-                DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
+                DataSet loadData = MSSQLHelper.NewConnection( CmdString);
 
                 Equipments.ItemsSource = loadData.Tables[0].DefaultView;
                 con.Close();
             }
 
-            using (SqlConnection con = new SqlConnection(MSSQLHelper.ConVal("EnAruhazam")))
+            using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
 
             {
 
                 string CmdString = "SELECT Riport_Date,dbo.Equipments.EquipmentName FROM dbo.Riports INNER JOIN dbo.Equipments ON dbo.Riports.EquipmentID=dbo.Equipments.Id ";
-                DataSet loadData = MSSQLHelper.NewConnection("EnAruhazam", CmdString);
+                DataSet loadData = MSSQLHelper.NewConnection(CmdString);
 
                 Riports.ItemsSource = loadData.Tables[0].DefaultView;
                 con.Close();
