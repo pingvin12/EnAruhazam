@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnAruhazamMaster", "EnAruhazam\EnAruhazamMaster.csproj", "{95923CDF-6E7B-437B-8E8C-5BBEADE0359A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD73C970-F586-4F63-87E1-95717231DEF8} = {BD73C970-F586-4F63-87E1-95717231DEF8}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopToast", "DesktopToast\DesktopToast.csproj", "{B8D704D5-FB0C-4C2D-8189-72C6649BA157}"
 EndProject
@@ -19,7 +22,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vendor", "vendor", "{D4E703
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnAruhazam.NotificationHandler", "EnAruhazam.NotificationHandler\EnAruhazam.NotificationHandler.csproj", "{18FA63D7-673B-4376-A342-B4D03F5157D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseConnectionTest", "DatabaseConnectionTest\DatabaseConnectionTest.csproj", "{F134F383-086D-44C9-B33C-B1713DD3C097}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseConnectionTest", "DatabaseConnectionTest\DatabaseConnectionTest.csproj", "{F134F383-086D-44C9-B33C-B1713DD3C097}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnAruhazam.MailLogic", "EnAruhazam.MailLogic\EnAruhazam.MailLogic.csproj", "{BD73C970-F586-4F63-87E1-95717231DEF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +60,10 @@ Global
 		{F134F383-086D-44C9-B33C-B1713DD3C097}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F134F383-086D-44C9-B33C-B1713DD3C097}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F134F383-086D-44C9-B33C-B1713DD3C097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD73C970-F586-4F63-87E1-95717231DEF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD73C970-F586-4F63-87E1-95717231DEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD73C970-F586-4F63-87E1-95717231DEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD73C970-F586-4F63-87E1-95717231DEF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,7 +12,7 @@ namespace EnAruhazam.MenuControl
     /// </summary>
     public partial class PeopleManager : Window
     {
-
+      
         public PeopleManager()
         {
             InitializeComponent();

@@ -1,0 +1,14 @@
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Release\EnAruhazam.NotificationHandler.dll.config
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Release\EnAruhazam.NotificationHandler.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Release\EnAruhazam.NotificationHandler.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Release\DesktopToast.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Release\Windows.winmd
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Release\System.Runtime.WindowsRuntime.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Release\DesktopToast.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Release\DesktopToast.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Release\System.Runtime.WindowsRuntime.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\obj\Release\EnAruhazam.NotificationHandler.csprojAssemblyReference.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\obj\Release\EnAruhazam.NotificationHandler.csproj.CoreCompileInputs.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\obj\Release\EnAruhazam.NotificationHandler.csproj.CopyComplete
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\obj\Release\EnAruhazam.NotificationHandler.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\obj\Release\EnAruhazam.NotificationHandler.pdb

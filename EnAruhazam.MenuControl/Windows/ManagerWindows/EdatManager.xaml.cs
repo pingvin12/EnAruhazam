@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using EnAruhazam.DataAccess;
 namespace EnAruhazam.MenuControl
 {
@@ -26,10 +15,12 @@ namespace EnAruhazam.MenuControl
             InitializeComponent();
             loadData();
         }
-
-        public static DataSet notcleanedMachines = MSSQLHelper.NewConnection("SELECT Riport_Date,dbo.Equipments.EquipmentName FROM dbo.Riports INNER JOIN dbo.Equipments ON dbo.Riports.EquipmentID=dbo.Equipments.Id WHERE Description = 'Kitakaritva' AND DATEPART(mm, Riport_date) < DATEPART(mm,  GETDATE())");
-
-
+        //loads machines that were cleaned in this month
+        public static DataSet notcleanedMachines
+            = MSSQLHelper.NewConnection
+            ("SELECT Riport_Date,dbo.Equipments.EquipmentName FROM dbo.Riports " +
+                "INNER JOIN dbo.Equipments ON dbo.Riports.EquipmentID=dbo.Equipments.Id" +
+                " WHERE Description = 'Kitakaritva' AND DATEPART(mm, Riport_date) < DATEPART(mm,  GETDATE())");
 
         /// <summary>
         /// load values from specified table

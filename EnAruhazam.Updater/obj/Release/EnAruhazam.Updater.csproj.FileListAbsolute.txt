@@ -1,0 +1,7 @@
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.Updater\bin\Release\EnAruhazam.Updater.exe.config
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.Updater\bin\Release\EnAruhazam.Updater.exe
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.Updater\bin\Release\EnAruhazam.Updater.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.Updater\obj\Release\EnAruhazam.Updater.csprojAssemblyReference.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.Updater\obj\Release\EnAruhazam.Updater.csproj.CoreCompileInputs.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.Updater\obj\Release\EnAruhazam.Updater.exe
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.Updater\obj\Release\EnAruhazam.Updater.pdb

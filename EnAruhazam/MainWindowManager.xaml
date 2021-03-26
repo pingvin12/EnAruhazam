@@ -67,15 +67,12 @@
                         <ColumnDefinition Width="89*"/>
                     </Grid.ColumnDefinitions>
                     <TreeView	Name="MTree"	Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="602" Margin="10,10,0,0" VerticalAlignment="Top" Width="200">
-                        <TreeViewItem Header="TODO"></TreeViewItem>
+                        
                     </TreeView>
-                    <RichTextBox Name="MContent" Grid.Column="1" HorizontalAlignment="Left" Height="376" Margin="127,72,0,0" VerticalAlignment="Top" Width="642">
-                        <FlowDocument>
-                            <Paragraph>
-                                <Run Text="Szöveg"/>
-                            </Paragraph>
-                        </FlowDocument>
-                    </RichTextBox>
+                    <TextBox IsReadOnly="True" Name="MContent" Grid.Column="1" HorizontalAlignment="Left" Height="376" Margin="127,72,0,0" VerticalAlignment="Top" Width="642">
+                        
+                        
+                    </TextBox>
                     <Label Name="MUser" Content="Kitől: " Grid.Column="1" HorizontalAlignment="Left" Margin="127,10,0,0" VerticalAlignment="Top" Width="642"/>
                     <Label Name="MTopic" Content="Tárgy: " Grid.Column="1" HorizontalAlignment="Left" Margin="127,41,0,0" VerticalAlignment="Top" Width="642"/>
                     <Button Content="Új Üzenet Írása" Grid.Column="1" HorizontalAlignment="Left" Margin="127,453,0,0" VerticalAlignment="Top" Width="172" Height="24"/>

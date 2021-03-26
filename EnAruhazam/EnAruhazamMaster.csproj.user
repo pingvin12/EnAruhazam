@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>C:\Users\MAZSOLA\Desktop\mysetup\|publish\</PublishUrlHistory>
-    <InstallUrlHistory />
+    <PublishUrlHistory>E:\setupforEnaruhazam\|C:\Users\MAZSOLA\Desktop\mysetup\|publish\</PublishUrlHistory>
+    <InstallUrlHistory>https://github.com/pingvin12/EnAruhazam/tree/main/EnAruhazam/bin/Release/app.publish/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

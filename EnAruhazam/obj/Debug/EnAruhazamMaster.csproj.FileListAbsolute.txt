@@ -82,3 +82,8 @@ C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruha
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazamMaster.csproj.CopyComplete
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.exe
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\bin\Debug\EnAruhazam.exe.manifest
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\bin\Debug\EnAruhazam.application
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.TrustInfo.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.exe.manifest
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.application

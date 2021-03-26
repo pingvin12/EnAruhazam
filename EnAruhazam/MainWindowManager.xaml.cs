@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using EnAruhazam.DataAccess;
 using EnAruhazam.NotificationHandler;
 using EnAruhazam.MenuControl;
@@ -24,7 +14,7 @@ namespace EnAruhazam
     /// </summary>
     public partial class MainWindowManager : Window
     {
-      
+        string signedInUser;
         /// <summary>
         /// Set a constructor so we can check who actually logged in.
         /// </summary>
@@ -34,8 +24,14 @@ namespace EnAruhazam
             UserLoggedInAs.Content = "Bejelentkezve mint: " + SignedInUser;
             Userlgdebug.Content = SignedInUser;
             InitContent();
+            SignedInUser = signedInUser;
             LoadCurrent();
+            
         }
+
+
+       
+
         ///<summary>
         ///Init window content
         ///</summary>
@@ -46,7 +42,7 @@ namespace EnAruhazam
             GlobalTypes.mainParentButtons[2] = HR;
             GlobalTypes.mainChildButtons[0] = Persons;
             GlobalTypes.mainChildButtons[1] = Shifts;
-
+            
             /// <!-- Load Debug mode -->
             GlobalTypes.lc.Load(debugw,this);
 
@@ -195,5 +191,9 @@ namespace EnAruhazam
             //delete notification
             GlobalTypes.nh.DoNotification("Teszt Értesítés fejléc", "Teszt értesítés szöveg", errortype);
         }
+
+
+
+
     }
 }
