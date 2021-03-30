@@ -51,6 +51,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Windows\ManagerWindows\OptionWindows\EmailOptionsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ManagerWindows\OptionWindows\LoginListOptionsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\ManagerWindows\OrderManager.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -73,6 +81,12 @@
     </Compile>
     <Compile Include="Windows\ManagerWindows\EdatManager.xaml.cs">
       <DependentUpon>EdatManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ManagerWindows\OptionWindows\EmailOptionsWindow.xaml.cs">
+      <DependentUpon>EmailOptionsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ManagerWindows\OptionWindows\LoginListOptionsWindow.xaml.cs">
+      <DependentUpon>LoginListOptionsWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\ManagerWindows\OrderManager.xaml.cs">
       <DependentUpon>OrderManager.xaml</DependentUpon>

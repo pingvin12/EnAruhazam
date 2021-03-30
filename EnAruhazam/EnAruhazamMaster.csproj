@@ -171,7 +171,7 @@
     </ApplicationDefinition>
     <Compile Include="GlobalTypes.cs" />
     <Compile Include="LoadConfig.cs" />
-    <Compile Include="Logic\MainAdminWindowLogic.cs" />
+    <Compile Include="Logic\MenuTabLogic.cs" />
     <Compile Include="ManagerForWorkers.xaml.cs">
       <DependentUpon>ManagerForWorkers.xaml</DependentUpon>
     </Compile>

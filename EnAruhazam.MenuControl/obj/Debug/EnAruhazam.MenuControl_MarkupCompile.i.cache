@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-61965489769
+8-1473628552
 
-71811349092
+91760034538
 13511404273
-Windows\ManagerWindows\AddOrder.xaml;Windows\ManagerWindows\AddPerson.xaml;Windows\ManagerWindows\EdatManager.xaml;Windows\ManagerWindows\OrderManager.xaml;Windows\ManagerWindows\PeopleManager.xaml;Windows\ManagerWindows\ShiftManager.xaml;
+Windows\ManagerWindows\AddOrder.xaml;Windows\ManagerWindows\AddPerson.xaml;Windows\ManagerWindows\EdatManager.xaml;Windows\ManagerWindows\OptionWindows\EmailOptionsWindow.xaml;Windows\ManagerWindows\OptionWindows\LoginListOptionsWindow.xaml;Windows\ManagerWindows\OrderManager.xaml;Windows\ManagerWindows\PeopleManager.xaml;Windows\ManagerWindows\ShiftManager.xaml;
 
 True
 

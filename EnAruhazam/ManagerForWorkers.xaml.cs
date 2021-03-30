@@ -1,29 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EnAruhazam.DataAccess;
+using System.Data;
+using System.Data.SqlClient;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using EnAruhazam.MenuControl;
 namespace EnAruhazam
 {
     /// <summary>
     /// Home page for workers
     /// </summary>
     public partial class ManagerForWorkers : Window
-    {
+    { string user;
         public ManagerForWorkers(string SignedInUser)
         {
             InitializeComponent();
-
+            user = SignedInUser;
             loggedin.Content = "Bejelentkezve mint: " + SignedInUser;
+            GetSchedule();
+        }
+
+        void GetSchedule()
+        {
+            SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr());
+
+
+
+
+            DataSet schedule = MSSQLHelper.NewConnection("SELECT ShiftStart, ShiftEnd, WorkerPos FROM dbo.Shifts INNER JOIN dbo.Workers ON dbo.Shifts.WorkerId = dbo.Workers.Id WHERE dbo.Workers.Name = '"+user+"'  ");
+            //valamiért nem tölti be....
+            ScheduleGrid.DataContext = schedule.Tables[0].DefaultView;
+            con.Close();
         }
     }
 }

@@ -33,3 +33,7 @@ C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\D
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\Windows\ManagerWindows\ShiftManager.baml
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\EnAruhazam.MenuControl.g.resources
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\EnAruhazam.MenuControl.csproj.CopyComplete
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\Windows\ManagerWindows\OptionWindows\EmailOptionsWindow.g.cs
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\Windows\ManagerWindows\OptionWindows\LoginListOptionsWindow.g.cs
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\Windows\ManagerWindows\OptionWindows\EmailOptionsWindow.baml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\Windows\ManagerWindows\OptionWindows\LoginListOptionsWindow.baml

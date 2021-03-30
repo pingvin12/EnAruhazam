@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.exe" size="24024">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.exe" size="24536">
       <assemblyIdentity name="EnAruhazam" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>H6g3DGDUm2fv2nWgyZgQhuaHpK7ESgxNfijhjDyDQ2Y=</dsig:DigestValue>
+        <dsig:DigestValue>rUMB3vkXUCDhYJIBWrg6dhZhiulZlFbCg/M0Z2NZ8kQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,14 +102,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.Updater.exe" size="5120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.Updater.exe" size="5632">
       <assemblyIdentity name="EnAruhazam.Updater" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mFTiuhuskgj4B5pLWYyTE5YZgwZ4YpdFBTAEpPB1Yhc=</dsig:DigestValue>
+        <dsig:DigestValue>vlqE0j64Bt3/uzIG+zV4yiflTE1jklZUhCMSuMyzpT0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -410,13 +410,13 @@
       <dsig:DigestValue>t8QNYIdRBBREkqjUX6aoaGPaKmhsB5OpmqzFpSkfi+0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="EnAruhazam.pdb" size="73216">
+  <file name="EnAruhazam.pdb" size="75264">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>7T3yLYL1FuAIe/Ba3GX6hU2+MHux05eMmFFmzMfJIXI=</dsig:DigestValue>
+      <dsig:DigestValue>rsSJ80VHheXE14pfG70b40VP82NFTauifHa7demWuqs=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

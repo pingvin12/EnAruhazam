@@ -19,7 +19,7 @@ namespace EnAruhazam
         public Grid Debuggrid;
         public bool IsFullscreen = false;
         public int WindowWidth,WindowHeight;
-        
+        public string email, password;
         public void Load(Grid debuggrid, Window window)
         {
 
@@ -43,6 +43,13 @@ namespace EnAruhazam
                 reader.MoveToAttribute("value");
                 WindowHeight = int.Parse(reader.Value);
 
+                reader.ReadToFollowing("Email");
+                reader.MoveToAttribute("value");
+                email = reader.Value;
+                reader.ReadToFollowing("EmailPassword");
+                reader.MoveToAttribute("value");
+                password = reader.Value;
+
             } while (reader.ReadToFollowing("Configuration"));
 
             this.Debuggrid = debuggrid;
@@ -56,7 +63,7 @@ namespace EnAruhazam
             ///
 
             //Init settings
-
+            SetEmailUser();
             SetDebug(debuggrid,window);
             //ResizeWindow(window);
 
@@ -71,6 +78,11 @@ namespace EnAruhazam
             */
         }
 
+
+        public void SetEmailUser()
+        {
+
+        }
 
         public void ResizeWindow(Window window)
         {

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="EnAruhazam.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="EnAruhazam.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="EnAruhazam" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.exe" size="27608">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.exe" size="29144">
       <assemblyIdentity name="EnAruhazam" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>occdJ7Z0Ht06MNe/8hcCJ8XXmX8CeBW4ST4KcowydE8=</dsig:DigestValue>
+        <dsig:DigestValue>lknzeSUiZWaD2UAckDtKdoGMwzsbWyuNzKqzwUkzUqI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.MenuControl.dll" size="28160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.MenuControl.dll" size="31744">
       <assemblyIdentity name="EnAruhazam.MenuControl" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YOzT8JEOpSWTvAaViAvGaC2vBznoRah2ow62S+SYz0M=</dsig:DigestValue>
+        <dsig:DigestValue>X6nqqt867q3Epl5kfETZEYhLadKaKVc+yy0dstDxank=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,14 +102,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.Updater.exe" size="5120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.Updater.exe" size="5632">
       <assemblyIdentity name="EnAruhazam.Updater" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8n9HsSWfPTpcuRco8iJsY3wqEc/Q+F1ymu88Tt9T9nw=</dsig:DigestValue>
+        <dsig:DigestValue>7Lr+CYd6lgROG9GTs4gJ0E8VhOz07CPSkZUVPhMNtJ4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -416,7 +416,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>2vzT70zISH554C5HTqzOr0rz3oHYPJb7xQ1GbGcy1xY=</dsig:DigestValue>
+      <dsig:DigestValue>kN5nAnHqy8ZrS/9bw2rO3/uDacCUYN8I26u8U8xGum8=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

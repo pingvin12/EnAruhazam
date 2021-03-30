@@ -46,8 +46,8 @@ namespace EnAruhazam
             /// <!-- Load Debug mode -->
             GlobalTypes.lc.Load(debugw,this);
 
-
-            GlobalTypes.mawl = new MainAdminWindowLogic(
+            //would need to init more MainAdminWindowLogic for more tabs.
+            GlobalTypes.mawl = new MenuTabLogic(
 
                GlobalTypes.mainParentButtons,
                Back,
@@ -192,8 +192,9 @@ namespace EnAruhazam
             GlobalTypes.nh.DoNotification("Teszt Értesítés fejléc", "Teszt értesítés szöveg", errortype);
         }
 
+        private void EmailOptions_Click(object sender, RoutedEventArgs e)
+        {
 
-
-
+        }
     }
 }

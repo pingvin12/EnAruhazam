@@ -18,7 +18,15 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Beosztás">
-                <Grid Background="#FFE5E5E5"/>
+                <StackPanel Name="ScheduleView" Background="#FFE5E5E5">
+                    <Label>Jelenlegi beosztás:</Label>
+                    <DataGrid IsReadOnly="True" Name="ScheduleGrid"/>
+
+
+                    <Label>Kért beosztás:</Label>
+                    <DataGrid IsReadOnly="False" Name="ScheduleRequests"/>
+
+                </StackPanel>
             </TabItem>
             <TabItem Header="Súgó">
                 <Grid Background="#FFE5E5E5"/>
