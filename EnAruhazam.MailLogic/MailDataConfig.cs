@@ -10,35 +10,25 @@ namespace EnAruhazam.MailLogic
 {
     class MailDataConfig
     {
-        private string name;
+        public string name;
+        public string pass;
+        public string Server;
+        public int Port;
+        public bool UseSSL = false;
+        public NetworkCredential credentials;
+        public CancellationTokenSource cancel;
+        public Uri url;
 
-        public string GetName()
-        {
-            return name;
-        }
 
-        public void SetName(string value)
-        {
-            name = value;
-        }
-
+      
         public MailDataConfig()
         {
-            using (var client = new Pop3Client())
-            {
-                var Server = "gmail.com";
-                var Port = "995";
-                var UseSSL = false;
-                var credentials = new NetworkCredential($"{GetName()}@gmail.com", $"{GetName()}");
-                var cancel = new CancellationTokenSource();
-                var url = new Uri(string.Format("pop{0}://{1}:{2}", (UseSSL ? "s" : ""), Server, Port));
-
-                
-               
-
-
-
-            }
+            Server = "imap.gmail.com";
+            Port = 993; //995 for POP , 993 is for IMAP
+            UseSSL = false;
+            credentials = new NetworkCredential($"{name}@gmail.com", pass);
+            cancel = new CancellationTokenSource();
+            url = new Uri(string.Format("imap{0}://{1}:{2}", (UseSSL ? "s" : ""), Server, Port));
         }
     }
 }

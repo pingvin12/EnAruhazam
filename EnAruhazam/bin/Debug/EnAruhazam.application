@@ -11,17 +11,17 @@
     <deploymentProvider codebase="https://github.com/pingvin12/EnAruhazam/tree/main/EnAruhazam/bin/Release/app.publish/EnAruhazam.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.7" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="EnAruhazam.exe.manifest" size="25455">
+    <dependentAssembly dependencyType="install" codebase="EnAruhazam.exe.manifest" size="95035">
       <assemblyIdentity name="EnAruhazam.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YK7RfyOlbl4epAZqqg8aVabYAFJZCzY2cxC5uAa6Tv4=</dsig:DigestValue>
+        <dsig:DigestValue>WQftrfZPH/P49nbp+WrthBeicbuRP648BNdCdZXlG7g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

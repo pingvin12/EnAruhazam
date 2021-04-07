@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Net;
 using System.Threading;
-using System.Windows.Forms;
-using MailKit.Net.Pop3;
+using System.Windows;
+using System.Windows.Controls;
+using MailKit;
+using MailKit.Net.Imap;
 using MailKit.Net.Smtp;
+using MailKit.Search;
 using MimeKit;
 
 namespace EnAruhazam.MailLogic
@@ -15,16 +18,20 @@ namespace EnAruhazam.MailLogic
         static MailDataConfig mdc = new MailDataConfig();
         static MailDataHolder mdh = new MailDataHolder();
 
+        
+        
+
+
         ///<summary>
         ///Currently right now only supports gmail.
         /// </summary>
         ///<param name="EmailName">Email name before prefix.</param>
-        ///
-        ///ex:(xxxxx@gmail.com)
-        public static void LogIn(string EmailName)
+        ///<example>(xxxxx@gmail.com)</example>
+        public static void LogIn(string EmailName, string Password)
         {
             isLoggedIn = true;
-            mdc.SetName(EmailName);
+            mdc.name = EmailName;
+            mdc.pass = Password;
         }
         /// <summary>
         /// Logs out of the system.
@@ -42,29 +49,43 @@ namespace EnAruhazam.MailLogic
         /// <param name="cancel">Signal cancel token</param>
         /// <param name="credentials">for password based authentication</param>
         /// <param name="mailBox">all of the mails subject in an array</param>
-        public static void GetMails(Pop3Client client,
-                                    Uri uri,
-                                    CancellationTokenSource cancel,
-                                    NetworkCredential credentials,string[] mailBox)
+        public static void GetMails(TreeView tree)
         {
-            if (isLoggedIn) { 
-            client.Connect(uri, cancel.Token);
-                //Since this access uses an XOAUTH2 free authentication, turning off protection from unsafe services in gmail necessary.
-            client.AuthenticationMechanisms.Remove("XOAUTH2");
-            client.Authenticate(credentials, cancel.Token);
-                //We iterate over the emails that the user has received...
-            for (int i = 0; i < client.Count; i++)
+            if (isLoggedIn)
             {
-                var msg = client.GetMessage(i);
-                    mailBox[i] += msg.Subject;
-                
-            }
-            client.Disconnect(true);
+                using (var client = new ImapClient(new ProtocolLogger ("imap.log")))
+                {
+                    try { 
+                    client.Connect(mdc.Server,mdc.Port,MailKit.Security.SecureSocketOptions.SslOnConnect);
+                    //Since this access uses an XOAUTH2 free authentication, turning off protection from unsafe services in gmail necessary right now.
+                  
+                        
+                        
+                    client.AuthenticationMechanisms.Remove("XOAUTH2");
+                    client.Authenticate(mdc.name, mdc.pass,mdc.cancel.Token);
+                        var uids = client.Inbox;
+
+                        //We iterate over the emails that the user has received...
+                        for (int i = 0; i < uids.Count; i++)
+                    {
+                        var msg = uids.GetMessage(i,mdc.cancel.Token);
+                            tree.Items.Add(msg.Subject);
+                        
+
+                    }
+                    client.Disconnect(true,mdc.cancel.Token);
+                    }
+                    catch(Exception e)
+                    {
+                        MessageBox.Show(e.Message);
+                    }
+                }
             }
             else
             {
-                MessageBox.Show("Bejelentkezés nélkül nem tudsz emaileket lekérni!","Hiba",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Bejelentkezés nélkül nem tudsz emaileket lekérni!", "Hiba");
                 //the request did not complete succesfully.
+
             }
         }
 
@@ -106,7 +127,7 @@ namespace EnAruhazam.MailLogic
             }
             else
             {
-                MessageBox.Show("Bejelentkezés nélkül nem tudsz emailt küldeni!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Bejelentkezés nélkül nem tudsz emailt küldeni!", "Hiba");
                 //the request did not complete succesfully.
             }
 

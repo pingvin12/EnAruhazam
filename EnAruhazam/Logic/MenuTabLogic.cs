@@ -73,14 +73,14 @@ namespace EnAruhazam
                     item.Visibility = Visibility.Hidden;
 
                 }
+            
 
-                stackPanel.Children.Clear();
+            stackPanel.Children.Clear();
+            object content = Desiredwindow.Content;
+            Desiredwindow.Content = null;
+            Desiredwindow.Close();
+            stackPanel.Children.Add(content as UIElement);
 
-                object content = Desiredwindow.Content;
-                Desiredwindow.Content = null;
-                Desiredwindow.Close();
-                stackPanel.Children.Add(content as UIElement);
-           
         }
         /// <summary>
         /// Creates submenu by setting the content's visibility to hidden

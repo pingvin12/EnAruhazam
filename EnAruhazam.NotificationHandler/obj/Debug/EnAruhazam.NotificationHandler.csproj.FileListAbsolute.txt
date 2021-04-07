@@ -1,6 +1,5 @@
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\obj\Debug\EnAruhazam.NotificationHandler.csprojAssemblyReference.cache
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\obj\Debug\EnAruhazam.NotificationHandler.csproj.CoreCompileInputs.cache
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Debug\EnAruhazam.NotificationHandler.dll.config
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Debug\EnAruhazam.NotificationHandler.dll
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Debug\EnAruhazam.NotificationHandler.pdb
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.NotificationHandler\bin\Debug\DesktopToast.dll

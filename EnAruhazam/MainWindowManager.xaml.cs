@@ -6,6 +6,8 @@ using System.Windows.Controls;
 using EnAruhazam.DataAccess;
 using EnAruhazam.NotificationHandler;
 using EnAruhazam.MenuControl;
+using EnAruhazam.MailLogic;
+using EnAruhazam.MenuControl.Windows.ManagerWindows.OptionWindows;
 namespace EnAruhazam
 {
 
@@ -14,7 +16,8 @@ namespace EnAruhazam
     /// </summary>
     public partial class MainWindowManager : Window
     {
-        string signedInUser;
+        private readonly string signedInUser;
+       
         /// <summary>
         /// Set a constructor so we can check who actually logged in.
         /// </summary>
@@ -28,23 +31,50 @@ namespace EnAruhazam
             LoadCurrent();
             
         }
+        
 
 
-       
 
         ///<summary>
         ///Init window content
         ///</summary>
         void InitContent()
         {
+            LoadConfig.Load(debugw, this);
+
+
+            //Get Current Emails if config says so
+            if(LoadConfig.isLoggedin == true) { 
+            try
+            { 
+            MailLogicBase.LogIn(LoadConfig.email, LoadConfig.password);
+            MailLogicBase.GetMails(MTree);
+           
+            }catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            }
+            GlobalTypes.OptionsButtons[0] = EmailOptions;
+            GlobalTypes.OptionsButtons[1] = AlterPermissions;
+
+            // Options window
+            GlobalTypes.OptionsMenu = new MenuTabLogic
+                (
+                    GlobalTypes.OptionsButtons, BackOptions, GlobalTypes.ChildOptionButtons, OptionsDisplay
+                );
+
+            /// <!-- Load Debug mode -->
+            
+            GlobalTypes.ChildOptionButtons[0] = UserOptions;
+
             GlobalTypes.mainParentButtons[0] = EM;
             GlobalTypes.mainParentButtons[1] = OM;
             GlobalTypes.mainParentButtons[2] = HR;
             GlobalTypes.mainChildButtons[0] = Persons;
             GlobalTypes.mainChildButtons[1] = Shifts;
+
             
-            /// <!-- Load Debug mode -->
-            GlobalTypes.lc.Load(debugw,this);
 
             //would need to init more MainAdminWindowLogic for more tabs.
             GlobalTypes.mawl = new MenuTabLogic(
@@ -84,10 +114,6 @@ namespace EnAruhazam
 
 
         }
-        private void RichTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
         /// <summary>
         /// If we are done with managing we can revert all our child values back to normal
         /// </summary>
@@ -95,6 +121,15 @@ namespace EnAruhazam
         {
             GlobalTypes.mawl.RevertWindowChild();
             
+
+        }
+        /// <summary>
+        /// If we are done with managing we can revert all our child values back to normal
+        /// </summary>
+        private void Back_Click1(object sender, RoutedEventArgs e)
+        {
+            GlobalTypes.OptionsMenu.RevertWindowChild();
+
 
         }
         /// <summary>
@@ -179,7 +214,8 @@ namespace EnAruhazam
         }
         private void AlterPermissions_Click(object sender, RoutedEventArgs e)
         {
-
+            AlterPermissionsWindow alterPermissionsWindow = new AlterPermissionsWindow();
+            GlobalTypes.OptionsMenu.ChangeWindowChild(alterPermissionsWindow);
         }
         /// <summary>
         /// Debug mode only : Instantiates test notification.
@@ -194,7 +230,10 @@ namespace EnAruhazam
 
         private void EmailOptions_Click(object sender, RoutedEventArgs e)
         {
-
+            EmailOptionsMenu emailOptionsMenu = new EmailOptionsMenu();
+            GlobalTypes.OptionsMenu.ChangeWindowChild(emailOptionsMenu);
         }
+
+      
     }
 }

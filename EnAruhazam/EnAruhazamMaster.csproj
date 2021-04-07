@@ -9,13 +9,14 @@
     <RootNamespace>EnAruhazam</RootNamespace>
     <AssemblyName>EnAruhazam</AssemblyName>
     <targetplatformversion>10.0</targetplatformversion>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>E:\setupforEnaruhazam\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
@@ -243,22 +244,22 @@
   <ItemGroup>
     <PublishFile Include="EnAruhazam.pdb">
       <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="Windows">
       <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>
@@ -268,20 +269,20 @@
       <Name>DesktopToast</Name>
     </ProjectReference>
     <ProjectReference Include="..\EnAruhazam.DataAccess\EnAruhazam.DataAccess.csproj">
-      <Project>{cc1464bf-c6d5-4932-a659-550e17bc813a}</Project>
+      <Project>{5bbaa207-52f1-4e19-830d-6d7c10e3e526}</Project>
       <Name>EnAruhazam.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EnAruhazam.MailLogic\EnAruhazam.MailLogic.csproj">
+      <Project>{65e321d6-374d-4ea0-85b6-6e8d7e8c7780}</Project>
+      <Name>EnAruhazam.MailLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EnAruhazam.MenuControl\EnAruhazam.MenuControl.csproj">
-      <Project>{8642f4ff-406f-4eff-af0f-dc8ff6600c6d}</Project>
+      <Project>{410efb62-2d18-4f46-a922-e01e67f5ac9c}</Project>
       <Name>EnAruhazam.MenuControl</Name>
     </ProjectReference>
     <ProjectReference Include="..\EnAruhazam.NotificationHandler\EnAruhazam.NotificationHandler.csproj">
-      <Project>{18fa63d7-673b-4376-a342-b4d03f5157d7}</Project>
+      <Project>{88824396-48d7-4e9c-b7e2-75ea94633109}</Project>
       <Name>EnAruhazam.NotificationHandler</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EnAruhazam.Updater\EnAruhazam.Updater.csproj">
-      <Project>{d1e5f605-a9b0-473b-8b6d-f69e9ab59a70}</Project>
-      <Name>EnAruhazam.Updater</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

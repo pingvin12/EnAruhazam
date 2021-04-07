@@ -12,17 +12,20 @@ using System.Windows.Controls;
 
 namespace EnAruhazam
 {
-    public class LoadConfig
+    public static class LoadConfig
     {
-        public bool debugmode = false;
+        public static bool debugmode = false;
+        public static Grid Debuggrid;
+        public static bool IsFullscreen = false;
+        public static int WindowWidth;
+        public static int WindowHeight;
+        public static bool isLoggedin;
+        public static string email;
+        public static string password;
 
-        public Grid Debuggrid;
-        public bool IsFullscreen = false;
-        public int WindowWidth,WindowHeight;
-        public string email, password;
-        public void Load(Grid debuggrid, Window window)
+        public static void Load(Grid debuggrid, Window window)
         {
-
+            bool isLoggedin = false;
             var reader = XmlReader.Create("config.xml");
             reader.ReadToFollowing("Configuration");
             // Read keys from the config file 
@@ -42,17 +45,19 @@ namespace EnAruhazam
                 reader.ReadToFollowing("windowHeight");
                 reader.MoveToAttribute("value");
                 WindowHeight = int.Parse(reader.Value);
-
+                reader.ReadToFollowing("EmailEnabled");
+                reader.MoveToAttribute("value");
+                isLoggedin = bool.Parse(reader.Value);
                 reader.ReadToFollowing("Email");
                 reader.MoveToAttribute("value");
                 email = reader.Value;
-                reader.ReadToFollowing("EmailPassword");
+                reader.ReadToFollowing("Password");
                 reader.MoveToAttribute("value");
                 password = reader.Value;
 
             } while (reader.ReadToFollowing("Configuration"));
 
-            this.Debuggrid = debuggrid;
+            Debuggrid = debuggrid;
             /// <summary> Decapracated </summary>
             /// Read a particular key from the config file 
             ///debugmode = bool.Parse(ConfigurationManager.AppSettings.Get("debugmode"));
@@ -63,7 +68,7 @@ namespace EnAruhazam
             ///
 
             //Init settings
-            SetEmailUser();
+           
             SetDebug(debuggrid,window);
             //ResizeWindow(window);
 
@@ -79,18 +84,14 @@ namespace EnAruhazam
         }
 
 
-        public void SetEmailUser()
-        {
-
-        }
-
-        public void ResizeWindow(Window window)
+    
+        public static void ResizeWindow(Window window)
         {
             window.Width = WindowWidth;
             window.Height = WindowHeight;
         }
 
-        public void SetDebug(Grid grid, Window window)
+        public static void SetDebug(Grid grid, Window window)
         {
          
             switch(debugmode)
@@ -106,7 +107,7 @@ namespace EnAruhazam
             }
         }
 
-        public void SetWindowToFullscreen( Window window)
+        public static void SetWindowToFullscreen( Window window)
         {
             switch (IsFullscreen)
             {

@@ -95,7 +95,7 @@
         "projectPath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.DataAccess\\EnAruhazam.DataAccess.csproj"
       },
       "frameworks": {
-        "net472": {}
+        "net47": {}
       }
     }
   }
