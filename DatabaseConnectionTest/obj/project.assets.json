@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    "net5.0-windows7.0": {
       "Microsoft.CodeCoverage/16.5.0": {
         "type": "package",
         "compile": {
@@ -1426,6 +1426,15 @@
         },
         "runtime": {
           "bin/placeholder/EnAruhazam.DataAccess.dll": {}
+        }
+      },
+      "EnAruhazam.MailLogic/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/EnAruhazam.MailLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EnAruhazam.MailLogic.dll": {}
         }
       }
     }
@@ -5284,11 +5293,17 @@
       "type": "project",
       "path": "../EnAruhazam.DataAccess/EnAruhazam.DataAccess.csproj",
       "msbuildProject": "../EnAruhazam.DataAccess/EnAruhazam.DataAccess.csproj"
+    },
+    "EnAruhazam.MailLogic/1.0.0": {
+      "type": "project",
+      "path": "../EnAruhazam.MailLogic/EnAruhazam.MailLogic.csproj",
+      "msbuildProject": "../EnAruhazam.MailLogic/EnAruhazam.MailLogic.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    "net5.0-windows7.0": [
       "EnAruhazam.DataAccess >= 1.0.0",
+      "EnAruhazam.MailLogic >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "NUnit >= 3.12.0",
       "NUnit3TestAdapter >= 3.16.1",
@@ -5303,9 +5318,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\DatabaseConnectionTest\\DatabaseConnectionTest.csproj",
-      "projectName": "DatabaseConnectionTest",
-      "projectPath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\DatabaseConnectionTest\\DatabaseConnectionTest.csproj",
+      "projectUniqueName": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\DatabaseConnectionTest\\TestProject.csproj",
+      "projectName": "TestProject",
+      "projectPath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\DatabaseConnectionTest\\TestProject.csproj",
       "packagesPath": "C:\\Users\\MAZSOLA\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\DatabaseConnectionTest\\obj\\",
       "projectStyle": "PackageReference",
@@ -5318,18 +5333,21 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net5.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
           "projectReferences": {
             "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.DataAccess\\EnAruhazam.DataAccess.csproj": {
               "projectPath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.DataAccess\\EnAruhazam.DataAccess.csproj"
+            },
+            "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.MailLogic\\EnAruhazam.MailLogic.csproj": {
+              "projectPath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.MailLogic\\EnAruhazam.MailLogic.csproj"
             }
           }
         }
@@ -5341,8 +5359,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -5378,6 +5396,9 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"

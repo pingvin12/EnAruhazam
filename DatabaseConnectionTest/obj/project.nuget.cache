@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QW01N/F5ahT0Kaun9HTApv+XLtXCwRRW99Sv9+9hWAjylsJ9KLDwTzQz8t5TpAkt6YFmVcjVRBH54P6QdGo91A==",
+  "dgSpecHash": "Fzo7D8xRYTkveuZs8eHJVH66L0ZEYfcUmE0IxLDtHfKXrcE1fYKAYEQTWcdiXAQTxAOFw6gnkJonUmkvor2ITw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\DatabaseConnectionTest\\DatabaseConnectionTest.csproj",
+  "projectFilePath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\DatabaseConnectionTest\\TestProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MAZSOLA\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\MAZSOLA\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

@@ -47,7 +47,7 @@ namespace EnAruhazam.MenuControl
             if (PeopleAddDisplay.Children.Count == 0)
             {
                 AddPerson ao = new AddPerson();
-                changeWindowChild(ao);
+                ChangeWindowChild(ao);
                 LoadData();
             }
             else
@@ -60,7 +60,7 @@ namespace EnAruhazam.MenuControl
         /// <summary>
         /// Add window
         /// </summary>
-        private void changeWindowChild(Window window)
+        private void ChangeWindowChild(Window window)
         {
             PeopleAddDisplay.Children.Clear();
 

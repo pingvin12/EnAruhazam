@@ -14,7 +14,7 @@
                 <Grid Background="#FFE5E5E5">
                     <Label Name="loggedin" Content="Bejelentkezve mint:" Margin="0,0,0,386"></Label>
                     <Label Content="Üdvözöljük!" Margin="0,22,0,375"></Label>
-                    <Button Content="Kijelentkezés" Margin="687,10,10,387"/>
+                    <Button Content="Kijelentkezés" Margin="687,10,10,387" Click="Button_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Beosztás">
@@ -29,7 +29,12 @@
                 </StackPanel>
             </TabItem>
             <TabItem Header="Súgó">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                <Label Content="ÉnÁruházam" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="76"/>
+                <Label Content="Készítette: Fényes József" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="26" Width="148"/>
+                <Label Content="Verzió: 2021.04.07" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Height="26" Width="148"/>
+                <Label Content="Elérhetőség: fenyesj@gmail.com" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Height="26" Width="181"/>
+                </Grid>
             </TabItem>
         </TabControl>
 

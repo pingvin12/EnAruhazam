@@ -21,7 +21,7 @@ namespace EnAruhazam
 
         //options tab
         public static MenuTabLogic OptionsMenu = new MenuTabLogic(null, null, null, null);
-        public static Button[] OptionsButtons = new Button[2];
+        public static Button[] OptionsButtons = new Button[1];
         public static Button[] ChildOptionButtons = new Button[1];
 
     }

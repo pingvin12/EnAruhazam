@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Xml;
 
 namespace EnAruhazam.MailLogic
 {
     public class MailDataHolder
     {
-        private List<Contact> Contacts { get; set; }
+        private List<Contact> Contacts = new List<Contact>();
 
         /// <summary>
         /// Returns all contacts.
@@ -12,6 +13,7 @@ namespace EnAruhazam.MailLogic
         public List<Contact> AllContacts
         {
             get => Contacts;
+            set => Contacts.Add(new Contact(value.ToString(),value.ToString()));
         }
 
         /// <summary>
@@ -33,6 +35,33 @@ namespace EnAruhazam.MailLogic
         /// <param name="desiredContact">the contact type that we want to modify</param>
         public void ModifyContactName(string cName ,Contact desiredContact)
         {Contacts.Find(x => x == desiredContact).Name = cName;}
+        /// <summary>
+        /// Saves all existing contacts in xml format.
+        /// </summary>
+        public void SaveAllContacts()
+        {
+            XmlWriter writer = XmlWriter.Create("contacts.xml");
+            writer.WriteStartDocument();
+            writer.WriteStartElement("Contacts");
+            for (int i = 0; i < Contacts.Count; i++)
+            {
+                
+                writer.WriteStartElement("Contact");
+                writer.WriteAttributeString("Email", Contacts[i].Email);
+                writer.WriteElementString("Name", Contacts[i].Name);
+                writer.WriteEndElement();
+               
+                
+            }
+            writer.WriteEndElement();
+            writer.WriteEndDocument();
+            writer.Flush();
+
+        }
+
+
+
+
     }
 }
 

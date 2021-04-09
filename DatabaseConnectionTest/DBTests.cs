@@ -1,35 +1,37 @@
 using NUnit.Framework;
-using System.Data.SqlClient;
 using EnAruhazam.DataAccess;
-using System.Data;
 /// <summary>
 /// This project does tests on database
 /// </summary>
 namespace DatabaseConnectionTest
 {
-    public class Tests
+    public class DatabaseTests
     {
-      
+       
 
-        [SetUp]
-        public void Setup()
-        {
-           
-
-        }
-
-        //Database test before doing other tests.
+        /// <summary>
+        ///  Testing Db connection
+        /// </summary>
         [Test]
         public void TestDBConnection()
         {
-           // SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr());
-           // Assert.AreEqual(con.State, ConnectionState.Open);
-
+        
+            Assert.That(MSSQLHelper.testHashSet.Count != 0);
+           
         }
 
+        /// <summary>
+        /// Checking that we have all the tables we need.
+        /// </summary>
         [Test]
         public void TestRequiredTables()
         {
+            string[] s = { "dbo.Workers", "dbo.Riports", "dbo.Managers", "dbo.Equipments", "dbo.Products", "dbo.Schedules", "dbo.Shifts", "dbo.Traffic" };
+
+            for (int i = 0; i < MSSQLHelper.testHashSet.Count; i++)
+            {
+                Assert.That(MSSQLHelper.testHashSet.Contains(s[i]));
+            }
             
         }
     }

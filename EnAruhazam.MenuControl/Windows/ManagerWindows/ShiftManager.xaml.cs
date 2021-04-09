@@ -59,9 +59,11 @@ namespace EnAruhazam.MenuControl
         /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            DateTime dt = ShiftDate.SelectedDate.Value;
+            string sqlFormattedDate = dt.Date.ToString("yyyy-MM-dd");
             using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
             {
-                string CmdString = "SELECT dbo.Workers.Name,ShiftStart,ShiftEnd,WorkerPos FROM dbo.Shifts INNER JOIN dbo.Workers ON dbo.Shifts.WorkerId=dbo.Workers.Id WHERE ShiftStart = '" + ShiftDate.SelectedDate.Value.ToString("YYYY-MM-DDTHH:MM:SS") + "'";
+                string CmdString = "SELECT dbo.Workers.Name,ShiftStart,ShiftEnd,WorkerPos FROM dbo.Shifts INNER JOIN dbo.Workers ON dbo.Shifts.WorkerId=dbo.Workers.Id WHERE ShiftStart = '" + sqlFormattedDate + "'";
                 DataSet loadData = MSSQLHelper.NewConnection(CmdString);
 
                 ShiftDisplay.ItemsSource = loadData.Tables[0].DefaultView;

@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnAruhazam.Updater", "EnAru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vendor", "vendor", "{D4E7039D-E8D3-4FF7-8616-1FA044980088}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseConnectionTest", "DatabaseConnectionTest\DatabaseConnectionTest.csproj", "{F134F383-086D-44C9-B33C-B1713DD3C097}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject", "DatabaseConnectionTest\TestProject.csproj", "{F134F383-086D-44C9-B33C-B1713DD3C097}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnAruhazam.MailLogic", "EnAruhazam.MailLogic\EnAruhazam.MailLogic.csproj", "{65E321D6-374D-4EA0-85B6-6E8D7E8C7780}"
 EndProject

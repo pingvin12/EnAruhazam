@@ -1,11 +1,3 @@
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazamMaster.csprojAssemblyReference.cache
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.exe.config
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\MainWindow.g.cs
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\MainWindowManager.g.cs
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\ManagerForWorkers.g.cs
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\App.g.cs
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam_MarkupCompile.cache
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam_MarkupCompile.lref
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\bin\Debug\EnAruhazam.exe.config
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\bin\Debug\EnAruhazam.exe.manifest
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\bin\Debug\EnAruhazam.application
@@ -175,6 +167,14 @@ C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\bin\Debug\MimeKit
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\bin\Debug\MimeKit.xml
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\bin\Debug\System.Runtime.WindowsRuntime.xml
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazamMaster.csprojAssemblyReference.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam.exe.config
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\MainWindow.g.cs
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\MainWindowManager.g.cs
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\ManagerForWorkers.g.cs
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\App.g.cs
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam_MarkupCompile.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\EnAruhazam_MarkupCompile.lref
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\MainWindow.baml
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\MainWindowManager.baml
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam\obj\Debug\ManagerForWorkers.baml

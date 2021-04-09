@@ -7,17 +7,10 @@
         mc:Ignorable="d"
         Title="EdatManager" Height="450" Width="800">
     <Grid>
-        <DataGrid IsReadOnly="True" Name="Equipments" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="93"/>
-        <DataGrid IsReadOnly="True" Name="Riports" HorizontalAlignment="Left" Height="399" Margin="108,10,0,0" VerticalAlignment="Top" Width="203" SelectionChanged="Riports_SelectionChanged"/>
-        <Label  Name="DeviceName" FontSize="25" Content="{Binding EquipmentName}" HorizontalAlignment="Left" Margin="316,10,0,0" VerticalAlignment="Top"/>
-        <Label  Name="RiportDate" FontSize="25" Content="{Binding RiportDate}" HorizontalAlignment="Left" Margin="316,58,0,0" VerticalAlignment="Top"/>
-        <RichTextBox IsReadOnly="True" Name="Description" HorizontalAlignment="Left" Height="186" Margin="316,106,0,0" VerticalAlignment="Top" Width="466">
-            <FlowDocument>
-                <Paragraph>
+        <DataGrid IsReadOnly="True" Name="Equipments" HorizontalAlignment="Left" Height="372" Margin="10,10,0,0" VerticalAlignment="Top" Width="243"/>
+        <DataGrid IsReadOnly="True" Name="Riports" HorizontalAlignment="Left" Height="399" Margin="258,10,0,0" VerticalAlignment="Top" Width="333" />
 
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
-
+        <Button Height="25" Width="50" Content="Új riport" Click="Button_Click" Margin="10,387,732,7"></Button>
+        <StackPanel Margin="596,10,0,0"  Name="AddDisplay"></StackPanel>
     </Grid>
 </Window>

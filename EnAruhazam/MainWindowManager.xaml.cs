@@ -16,7 +16,7 @@ namespace EnAruhazam
     /// </summary>
     public partial class MainWindowManager : Window
     {
-        private readonly string signedInUser;
+        
        
         /// <summary>
         /// Set a constructor so we can check who actually logged in.
@@ -27,7 +27,7 @@ namespace EnAruhazam
             UserLoggedInAs.Content = "Bejelentkezve mint: " + SignedInUser;
             Userlgdebug.Content = SignedInUser;
             InitContent();
-            SignedInUser = signedInUser;
+            
             LoadCurrent();
             
         }
@@ -41,22 +41,28 @@ namespace EnAruhazam
         void InitContent()
         {
             LoadConfig.Load(debugw, this);
-
-
-            //Get Current Emails if config says so
-            if(LoadConfig.isLoggedin == true) { 
-            try
-            { 
+            string[] inb = Array.Empty<string>();
             MailLogicBase.LogIn(LoadConfig.email, LoadConfig.password);
-            MailLogicBase.GetMails(MTree);
-           
+            
+            //Get Current Emails if config says so
+            if (LoadConfig.isLoggedin == true) { 
+            try
+            {
+            MailLogicBase.mdc.Server = LoadConfig.emailDomain;
+            MailLogicBase.mdc.Port = LoadConfig.emailPort;
+            
+            MailLogicBase.GetMails(inb);
+           foreach(var item in inb)
+                    {
+                        MTree.Items.Add(item);
+                    }
             }catch(Exception e)
             {
                 MessageBox.Show(e.Message);
             }
             }
             GlobalTypes.OptionsButtons[0] = EmailOptions;
-            GlobalTypes.OptionsButtons[1] = AlterPermissions;
+           
 
             // Options window
             GlobalTypes.OptionsMenu = new MenuTabLogic
@@ -212,11 +218,7 @@ namespace EnAruhazam
         {
             GlobalTypes.mawl.AddSubmenu();
         }
-        private void AlterPermissions_Click(object sender, RoutedEventArgs e)
-        {
-            AlterPermissionsWindow alterPermissionsWindow = new AlterPermissionsWindow();
-            GlobalTypes.OptionsMenu.ChangeWindowChild(alterPermissionsWindow);
-        }
+        
         /// <summary>
         /// Debug mode only : Instantiates test notification.
         /// </summary>
@@ -234,6 +236,9 @@ namespace EnAruhazam
             GlobalTypes.OptionsMenu.ChangeWindowChild(emailOptionsMenu);
         }
 
-      
+        private void Write_Mail(object sender, RoutedEventArgs e)
+        {
+            MailLogicBase.NewMail("Fenyesj", "fenyesj@gmail.com", MailLogicBase.mdc.name,MailLogicBase.mdc.pass, "teszt", "teszt");
+        }
     }
 }

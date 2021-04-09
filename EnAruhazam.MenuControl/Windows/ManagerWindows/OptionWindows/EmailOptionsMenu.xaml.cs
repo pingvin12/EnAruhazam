@@ -49,14 +49,21 @@ namespace EnAruhazam.MenuControl.Windows.ManagerWindows.OptionWindows
             XmlDocument doc = new XmlDocument();
             doc.Load("config.xml");
 
+            XmlNode emailDomain = doc.SelectSingleNode("/Configuration/EmailDomainServer");
+            XmlNode emailPort = doc.SelectSingleNode("/Configuration/EmailPort");
             XmlNode emailEnabled = doc.SelectSingleNode("/Configuration/EmailEnabled");
             XmlNode email = doc.SelectSingleNode("/Configuration/Email");
             XmlNode password = doc.SelectSingleNode("/Configuration/Password");
+            XmlAttribute domain = emailDomain.Attributes["value"];
+            XmlAttribute port = emailPort.Attributes["value"];
             XmlAttribute isen = emailEnabled.Attributes["value"];
             XmlAttribute emaile = email.Attributes["value"];
             XmlAttribute pass = password.Attributes["value"];
 
             integration.IsChecked = Boolean.Parse(isen.Value);
+            EmailHost.Text = domain.Value;
+            EmailPort.Text = port.Value;
+            
             Email.Text = emaile.Value;
             Password.Text = pass.Value;
             
@@ -70,16 +77,22 @@ namespace EnAruhazam.MenuControl.Windows.ManagerWindows.OptionWindows
             XmlDocument doc = new XmlDocument();
             doc.Load("config.xml");
 
+            XmlNode emailDomain = doc.SelectSingleNode("/Configuration/EmailDomainServer");
+            XmlNode emailPort = doc.SelectSingleNode("/Configuration/EmailPort");
             XmlNode emailEnabled = doc.SelectSingleNode("/Configuration/EmailEnabled");
             XmlNode email = doc.SelectSingleNode("/Configuration/Email");
             XmlNode password = doc.SelectSingleNode("/Configuration/Password");
+            XmlAttribute domain = emailDomain.Attributes["value"];
+            XmlAttribute port = emailPort.Attributes["value"];
             XmlAttribute isen = emailEnabled.Attributes["value"];
             XmlAttribute emaile = email.Attributes["value"];
             XmlAttribute pass = password.Attributes["value"];
-
             isen.Value = integration.IsChecked.ToString();
-            emaile.Value = Email.Text.ToString();
-            pass.Value = Password.Text.ToString();
+            EmailHost.Text = domain.Value;
+            EmailPort.Text = port.Value;
+            
+            Email.Text = emaile.Value;
+            Password.Text = pass.Value;
 
             doc.Save("config.xml");
 

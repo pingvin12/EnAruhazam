@@ -1,33 +1,8 @@
 Connected to imaps://imap.gmail.com:993/
-S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:c171:f4aa:6d1b:2d1b q17mb29345277wme
+S: * OK Gimap ready for requests from 84.3.66.176 y17mb2763426wmi
 C: A00000000 CAPABILITY
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
-S: A00000000 OK Thats all she wrote! q17mb29345277wme
-C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
-S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
-S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
-C: A00000002 NAMESPACE
-S: * NAMESPACE (("" "/")) NIL NIL
-S: A00000002 OK Success
-C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
-S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
-S: A00000003 OK Success
-C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
-S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
-S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
-S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
-S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
-S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
-S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
-S: A00000004 OK Success
-C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
-S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
-S: A00000005 OK Success
-Connected to imaps://imap.gmail.com:993/
-S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:c171:f4aa:6d1b:2d1b s15mb89079235wrw
-C: A00000000 CAPABILITY
-S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
-S: A00000000 OK Thats all she wrote! s15mb89079235wrw
+S: A00000000 OK Thats all she wrote! y17mb2763426wmi
 C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
 S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
@@ -52,10 +27,10 @@ C: A00000006 LOGOUT
 S: * BYE LOGOUT Requested
 S: A00000006 OK 73 good day (Success)
 Connected to imaps://imap.gmail.com:993/
-S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:c171:f4aa:6d1b:2d1b t16mb270626391wmq
+S: * OK Gimap ready for requests from 84.3.66.176 n18mb9873920wrx
 C: A00000000 CAPABILITY
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
-S: A00000000 OK Thats all she wrote! t16mb270626391wmq
+S: A00000000 OK Thats all she wrote! n18mb9873920wrx
 C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
 S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
@@ -77,38 +52,10 @@ C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
 S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
 S: A00000005 OK Success
 Connected to imaps://imap.gmail.com:993/
-S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:c171:f4aa:6d1b:2d1b i4mb72344573wro
+S: * OK Gimap ready for requests from 84.3.66.176 s198mb4796436wme
 C: A00000000 CAPABILITY
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
-S: A00000000 OK Thats all she wrote! i4mb72344573wro
-C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
-S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
-S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
-C: A00000002 NAMESPACE
-S: * NAMESPACE (("" "/")) NIL NIL
-S: A00000002 OK Success
-C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
-S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
-S: A00000003 OK Success
-C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
-S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
-S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
-S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
-S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
-S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
-S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
-S: A00000004 OK Success
-C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
-S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
-S: A00000005 OK Success
-C: A00000006 LOGOUT
-S: * BYE LOGOUT Requested
-S: A00000006 OK 73 good day (Success)
-Connected to imaps://imap.gmail.com:993/
-S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:c171:f4aa:6d1b:2d1b q3mb56998230wrw
-C: A00000000 CAPABILITY
-S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
-S: A00000000 OK Thats all she wrote! q3mb56998230wrw
+S: A00000000 OK Thats all she wrote! s198mb4796436wme
 C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
 S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
@@ -133,15 +80,10 @@ C: A00000006 LOGOUT
 S: * BYE LOGOUT Requested
 S: A00000006 OK 73 good day (Success)
 Connected to imaps://imap.gmail.com:993/
-S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:c171:f4aa:6d1b:2d1b s5mb609619795wrf
+S: * OK Gimap ready for requests from 84.3.66.176 c4mb5404236wmb
 C: A00000000 CAPABILITY
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
-S: A00000000 OK Thats all she wrote! s5mb609619795wrf
-Connected to imaps://imap.gmail.com:993/
-S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:c171:f4aa:6d1b:2d1b s11mb9677424wrm
-C: A00000000 CAPABILITY
-S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
-S: A00000000 OK Thats all she wrote! s11mb9677424wrm
+S: A00000000 OK Thats all she wrote! c4mb5404236wmb
 C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
 S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
@@ -166,10 +108,10 @@ C: A00000006 LOGOUT
 S: * BYE LOGOUT Requested
 S: A00000006 OK 73 good day (Success)
 Connected to imaps://imap.gmail.com:993/
-S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:c171:f4aa:6d1b:2d1b y13mb564164224wrg
+S: * OK Gimap ready for requests from 84.3.66.176 k67mb3504527wmk
 C: A00000000 CAPABILITY
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
-S: A00000000 OK Thats all she wrote! y13mb564164224wrg
+S: A00000000 OK Thats all she wrote! k67mb3504527wmk
 C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
 S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
@@ -191,10 +133,10 @@ C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
 S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
 S: A00000005 OK Success
 Connected to imaps://imap.gmail.com:993/
-S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:c171:f4aa:6d1b:2d1b k16mb6309772wmi
+S: * OK Gimap ready for requests from 84.3.66.176 l4mb33038597wrx
 C: A00000000 CAPABILITY
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
-S: A00000000 OK Thats all she wrote! k16mb6309772wmi
+S: A00000000 OK Thats all she wrote! l4mb33038597wrx
 C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
 S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
 S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
@@ -215,3 +157,594 @@ S: A00000004 OK Success
 C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
 S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
 S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 84.3.66.176 u14mb4500757wmc
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! u14mb4500757wmc
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 84.3.66.176 v3mb321541318wrd
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! v3mb321541318wrd
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 84.3.66.176 91mb672529405wre
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! 91mb672529405wre
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 b12mb8289320wro
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! b12mb8289320wro
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 i17mb6972670wre
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! i17mb6972670wre
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 o4mb7535553wrn
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! o4mb7535553wrn
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 k189mb199971wme
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! k189mb199971wme
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 i16mb16399172wml
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! i16mb16399172wml
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 d15mb7094599wru
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! d15mb7094599wru
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 m1mb8326541wri
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! m1mb8326541wri
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 67mb7582155wrc
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! 67mb7582155wrc
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 y17mb20792560wmi
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! y17mb20792560wmi
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 j8mb7088522wrm
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! j8mb7088522wrm
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 89mb8763413wrl
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! 89mb8763413wrl
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 k16mb2981770wrx
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! k16mb2981770wrx
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 k11mb7451550wrv
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! k11mb7451550wrv
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 k26mb21112002wmr
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! k26mb21112002wmr
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 m19mb9366355wrh
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! m19mb9366355wrh
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 e2mb10132861wrh
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! e2mb10132861wrh
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 j8mb11578739wrq
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! j8mb11578739wrq
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)
+Connected to imaps://imap.gmail.com:993/
+S: * OK Gimap ready for requests from 2001:4c4c:2096:db00:805a:605:d5cf:9da9 y14mb11302922wro
+C: A00000000 CAPABILITY
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+S: A00000000 OK Thats all she wrote! y14mb11302922wro
+C: A00000001 AUTHENTICATE PLAIN AHRlc3p0ZW1haWw4ODgAMTIzNDU2QWFA
+S: * CAPABILITY IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+S: A00000001 OK tesztemail888@gmail.com authenticated (Success)
+C: A00000002 NAMESPACE
+S: * NAMESPACE (("" "/")) NIL NIL
+S: A00000002 OK Success
+C: A00000003 LIST "" "INBOX" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasNoChildren \Subscribed) "/" "INBOX"
+S: A00000003 OK Success
+C: A00000004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\Flagged \HasNoChildren \Subscribed) "/" "[Gmail]/Csillagozott"
+S: * LIST (\HasNoChildren \Sent \Subscribed) "/" "[Gmail]/Elk&APw-ld&APY-tt levelek"
+S: * LIST (\HasNoChildren \Subscribed \Trash) "/" "[Gmail]/Kuka"
+S: * LIST (\Drafts \HasNoChildren \Subscribed) "/" "[Gmail]/Piszkozatok"
+S: * LIST (\HasNoChildren \Junk \Subscribed) "/" "[Gmail]/Spam"
+S: * LIST (\All \HasNoChildren \Subscribed) "/" "[Gmail]/&ANY-sszes lev&AOk-l"
+S: A00000004 OK Success
+C: A00000005 LIST "" "[Gmail]" RETURN (SUBSCRIBED CHILDREN)
+S: * LIST (\HasChildren \NonExistent \Subscribed) "/" "[Gmail]"
+S: A00000005 OK Success
+C: A00000006 LOGOUT
+S: * BYE LOGOUT Requested
+S: A00000006 OK 73 good day (Success)

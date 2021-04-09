@@ -1,0 +1,301 @@
+Connected to smtp://smtp.gmail.com:587/?starttls=when-available
+S: 220 smtp.gmail.com ESMTP oz1sm3997224ejb.80 - gsmtp
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN AHRlc3p0ZW1haWw4ODhAZ21haWwuY29tADEyMzQ1NkFhQA==
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<fenyesj@gmail.com> SIZE=259
+C: RCPT TO:<tesztemail888@gmail.com>
+S: 250 2.1.0 OK oz1sm3997224ejb.80 - gsmtp
+S: 250 2.1.5 OK oz1sm3997224ejb.80 - gsmtp
+C: DATA
+S: 354  Go ahead oz1sm3997224ejb.80 - gsmtp
+C: From: Fenyesj <fenyesj@gmail.com>
+C: Date: Thu, 08 Apr 2021 12:11:20 +0200
+C: Subject: teszt
+C: Message-Id: <0B5HZZ68FDU4.6PFGBKSAXV7C2@fenyesjozsef>
+C: To: tesztemail888 <tesztemail888@gmail.com>
+C: MIME-Version: 1.0
+C: Content-Type: text/plain; charset=utf-8
+C: 
+C: teszt
+C: .
+S: 250 2.0.0 OK  1617876682 oz1sm3997224ejb.80 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection oz1sm3997224ejb.80 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=when-available
+S: 220 smtp.gmail.com ESMTP n10sm3544566ejg.124 - gsmtp
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN AHRlc3p0ZW1haWw4ODhAZ21haWwuY29tADEyMzQ1NkFhQA==
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<fenyesj@gmail.com> SIZE=259
+C: RCPT TO:<tesztemail888@gmail.com>
+S: 250 2.1.0 OK n10sm3544566ejg.124 - gsmtp
+S: 250 2.1.5 OK n10sm3544566ejg.124 - gsmtp
+C: DATA
+S: 354  Go ahead n10sm3544566ejg.124 - gsmtp
+C: From: Fenyesj <fenyesj@gmail.com>
+C: Date: Thu, 08 Apr 2021 12:11:23 +0200
+C: Subject: teszt
+C: Message-Id: <WOUDE078FDU4.BBKUIHJXGUUH3@fenyesjozsef>
+C: To: tesztemail888 <tesztemail888@gmail.com>
+C: MIME-Version: 1.0
+C: Content-Type: text/plain; charset=utf-8
+C: 
+C: teszt
+C: .
+S: 250 2.0.0 OK  1617876684 n10sm3544566ejg.124 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection n10sm3544566ejg.124 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=when-available
+S: 220 smtp.gmail.com ESMTP s6sm10361831ejv.11 - gsmtp
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN AHRlc3p0ZW1haWw4ODhAZ21haWwuY29tADEyMzQ1NkFhQA==
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<fenyesj@gmail.com> SIZE=259
+C: RCPT TO:<tesztemail888@gmail.com>
+S: 250 2.1.0 OK s6sm10361831ejv.11 - gsmtp
+S: 250 2.1.5 OK s6sm10361831ejv.11 - gsmtp
+C: DATA
+S: 354  Go ahead s6sm10361831ejv.11 - gsmtp
+C: From: Fenyesj <fenyesj@gmail.com>
+C: Date: Thu, 08 Apr 2021 12:11:24 +0200
+C: Subject: teszt
+C: Message-Id: <WQRNK078FDU4.1O2MCSA634P41@fenyesjozsef>
+C: To: tesztemail888 <tesztemail888@gmail.com>
+C: MIME-Version: 1.0
+C: Content-Type: text/plain; charset=utf-8
+C: 
+C: teszt
+C: .
+S: 250 2.0.0 OK  1617876685 s6sm10361831ejv.11 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection s6sm10361831ejv.11 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=when-available
+S: 220 smtp.gmail.com ESMTP k26sm14151216ejk.29 - gsmtp
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN AHRlc3p0ZW1haWw4ODhAZ21haWwuY29tADEyMzQ1NkFhQA==
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<fenyesj@gmail.com> SIZE=259
+C: RCPT TO:<tesztemail888@gmail.com>
+S: 250 2.1.0 OK k26sm14151216ejk.29 - gsmtp
+S: 250 2.1.5 OK k26sm14151216ejk.29 - gsmtp
+C: DATA
+S: 354  Go ahead k26sm14151216ejk.29 - gsmtp
+C: From: Fenyesj <fenyesj@gmail.com>
+C: Date: Thu, 08 Apr 2021 12:11:25 +0200
+C: Subject: teszt
+C: Message-Id: <ARFQQ078FDU4.A6T3TLKCN8BJ1@fenyesjozsef>
+C: To: tesztemail888 <tesztemail888@gmail.com>
+C: MIME-Version: 1.0
+C: Content-Type: text/plain; charset=utf-8
+C: 
+C: teszt
+C: .
+S: 250 2.0.0 OK  1617876686 k26sm14151216ejk.29 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection k26sm14151216ejk.29 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=when-available
+S: 220 smtp.gmail.com ESMTP l15sm9054723edb.48 - gsmtp
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN AHRlc3p0ZW1haWw4ODhAZ21haWwuY29tADEyMzQ1NkFhQA==
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<fenyesj@gmail.com> SIZE=258
+C: RCPT TO:<tesztemail888@gmail.com>
+S: 250 2.1.0 OK l15sm9054723edb.48 - gsmtp
+S: 250 2.1.5 OK l15sm9054723edb.48 - gsmtp
+C: DATA
+S: 354  Go ahead l15sm9054723edb.48 - gsmtp
+C: From: Fenyesj <fenyesj@gmail.com>
+C: Date: Thu, 08 Apr 2021 12:13:05 +0200
+C: Subject: teszt
+C: Message-Id: <1R4ACH78FDU4.KJ2Q0Y8GUZD6@fenyesjozsef>
+C: To: tesztemail888 <tesztemail888@gmail.com>
+C: MIME-Version: 1.0
+C: Content-Type: text/plain; charset=utf-8
+C: 
+C: teszt
+C: .
+S: 250 2.0.0 OK  1617876787 l15sm9054723edb.48 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection l15sm9054723edb.48 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=when-available
+S: 220 smtp.gmail.com ESMTP jo12sm6054251ejb.52 - gsmtp
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN AHRlc3p0ZW1haWw4ODhAZ21haWwuY29tADEyMzQ1NkFhQA==
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<fenyesj@gmail.com> SIZE=259
+C: RCPT TO:<tesztemail888@gmail.com>
+S: 250 2.1.0 OK jo12sm6054251ejb.52 - gsmtp
+S: 250 2.1.5 OK jo12sm6054251ejb.52 - gsmtp
+C: DATA
+S: 354  Go ahead jo12sm6054251ejb.52 - gsmtp
+C: From: Fenyesj <fenyesj@gmail.com>
+C: Date: Thu, 08 Apr 2021 12:17:34 +0200
+C: Subject: teszt
+C: Message-Id: <UYMLVP88FDU4.S1DH1KA1U51G3@fenyesjozsef>
+C: To: tesztemail888 <tesztemail888@gmail.com>
+C: MIME-Version: 1.0
+C: Content-Type: text/plain; charset=utf-8
+C: 
+C: teszt
+C: .
+S: 250 2.0.0 OK  1617877056 jo12sm6054251ejb.52 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection jo12sm6054251ejb.52 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=when-available
+S: 220 smtp.gmail.com ESMTP d6sm2163812edr.21 - gsmtp
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO [192.168.0.103]
+S: 250-smtp.gmail.com at your service, [84.3.66.176]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN AHRlc3p0ZW1haWw4ODhAZ21haWwuY29tADEyMzQ1NkFhQA==
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<fenyesj@gmail.com> SIZE=258
+C: RCPT TO:<tesztemail888@gmail.com>
+S: 250 2.1.0 OK d6sm2163812edr.21 - gsmtp
+S: 250 2.1.5 OK d6sm2163812edr.21 - gsmtp
+C: DATA
+S: 354  Go ahead d6sm2163812edr.21 - gsmtp
+C: From: Fenyesj <fenyesj@gmail.com>
+C: Date: Thu, 08 Apr 2021 12:17:37 +0200
+C: Subject: teszt
+C: Message-Id: <GHA8AQ88FDU4.QN5BQM73MKGI@fenyesjozsef>
+C: To: tesztemail888 <tesztemail888@gmail.com>
+C: MIME-Version: 1.0
+C: Content-Type: text/plain; charset=utf-8
+C: 
+C: teszt
+C: .
+S: 250 2.0.0 OK  1617877058 d6sm2163812edr.21 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection d6sm2163812edr.21 - gsmtp

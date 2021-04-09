@@ -11,6 +11,8 @@ namespace EnAruhazam.DataAccess
 {
     public static class MSSQLHelper 
     {
+
+        public static HashSet<string> testHashSet = new HashSet<string>{ "dbo.Workers","dbo.Riports","dbo.Managers","dbo.Equipments","dbo.Products","dbo.Schedules","dbo.Shifts","dbo.Traffic"};
         /// <summary>
         /// Gets connection string from configurationmanager and sets as default value
         /// </summary>
@@ -18,6 +20,10 @@ namespace EnAruhazam.DataAccess
         {
             return ConfigurationManager.ConnectionStrings["EnAruhazam"].ConnectionString;
         }
+
+       
+
+
         /// <summary>
         /// Function for SELECT type data queries
         /// </summary>
@@ -27,7 +33,7 @@ namespace EnAruhazam.DataAccess
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command);
             DataSet dataSet = new DataSet();
             sqlDataAdapter.Fill(dataSet);
-
+            
             return dataSet;
         }
 

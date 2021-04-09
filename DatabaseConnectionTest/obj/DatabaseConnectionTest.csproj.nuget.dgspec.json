@@ -34,6 +34,9 @@
             "projectReferences": {
               "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.DataAccess\\EnAruhazam.DataAccess.csproj": {
                 "projectPath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.DataAccess\\EnAruhazam.DataAccess.csproj"
+              },
+              "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.MailLogic\\EnAruhazam.MailLogic.csproj": {
+                "projectPath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.MailLogic\\EnAruhazam.MailLogic.csproj"
               }
             }
           }
@@ -93,6 +96,16 @@
         "projectUniqueName": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.DataAccess\\EnAruhazam.DataAccess.csproj",
         "projectName": "EnAruhazam.DataAccess",
         "projectPath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.DataAccess\\EnAruhazam.DataAccess.csproj"
+      },
+      "frameworks": {
+        "net47": {}
+      }
+    },
+    "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.MailLogic\\EnAruhazam.MailLogic.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.MailLogic\\EnAruhazam.MailLogic.csproj",
+        "projectName": "EnAruhazam.MailLogic",
+        "projectPath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazam.MailLogic\\EnAruhazam.MailLogic.csproj"
       },
       "frameworks": {
         "net47": {}

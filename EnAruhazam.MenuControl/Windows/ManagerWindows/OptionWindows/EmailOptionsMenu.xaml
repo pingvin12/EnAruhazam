@@ -9,7 +9,13 @@
     <Grid>
         <StackPanel>
             <CheckBox Name="integration" Content="Email integráció" IsChecked="False" Unchecked="CheckBox_Unchecked" Checked="CheckBox_Checked"></CheckBox>
-            <Label>Email(csak gmail támogatott)</Label>
+            <Label FontSize="14" FontWeight="Bold" Width="135">Haladó beállítások</Label>
+            <Label>Email szerver domain</Label>
+            <TextBox IsReadOnly="true" Name="EmailHost"></TextBox>
+            <Label>Szerver Port</Label>
+            <TextBox IsReadOnly="true" Name="EmailPort"></TextBox>
+            <Label FontSize="14" FontWeight="Bold" Width="140" >Belépési Beállítások</Label>
+            <Label>Email</Label>
             <TextBox IsReadOnly="true" Name="Email"></TextBox>
             <Label>Jelszó</Label>
             <TextBox IsReadOnly="true" Name="Password"></TextBox>

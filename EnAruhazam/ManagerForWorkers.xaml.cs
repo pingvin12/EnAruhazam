@@ -1,4 +1,5 @@
 ﻿using EnAruhazam.DataAccess;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows;
@@ -22,12 +23,19 @@ namespace EnAruhazam
             SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr());
 
 
+            DataSet schedulereq = MSSQLHelper.NewConnection("SELECT ShiftStart, ShiftEnd, Description FROM dbo.Schedules INNER JOIN dbo.Workers ON dbo.Schedules.WorkerId = dbo.Workers.Id WHERE dbo.Workers.Name = '" + user + "'  ");
 
+            ScheduleRequests.ItemsSource = schedulereq.Tables[0].DefaultView;
 
             DataSet schedule = MSSQLHelper.NewConnection("SELECT ShiftStart, ShiftEnd, WorkerPos FROM dbo.Shifts INNER JOIN dbo.Workers ON dbo.Shifts.WorkerId = dbo.Workers.Id WHERE dbo.Workers.Name = '"+user+"'  ");
-            //valamiért nem tölti be....
-            ScheduleGrid.DataContext = schedule.Tables[0].DefaultView;
+            
+            ScheduleGrid.ItemsSource = schedule.Tables[0].DefaultView;
             con.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

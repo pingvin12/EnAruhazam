@@ -22,10 +22,12 @@ namespace EnAruhazam
         public static bool isLoggedin;
         public static string email;
         public static string password;
+        public static string emailDomain;
+        public static int emailPort;
 
         public static void Load(Grid debuggrid, Window window)
         {
-            bool isLoggedin = false;
+           
             var reader = XmlReader.Create("config.xml");
             reader.ReadToFollowing("Configuration");
             // Read keys from the config file 
@@ -45,6 +47,12 @@ namespace EnAruhazam
                 reader.ReadToFollowing("windowHeight");
                 reader.MoveToAttribute("value");
                 WindowHeight = int.Parse(reader.Value);
+                reader.ReadToFollowing("EmailDomainServer");
+                reader.MoveToAttribute("value");
+                emailDomain = reader.Value;
+                reader.ReadToFollowing("EmailPort");
+                reader.MoveToAttribute("value");
+                emailPort = int.Parse(reader.Value);
                 reader.ReadToFollowing("EmailEnabled");
                 reader.MoveToAttribute("value");
                 isLoggedin = bool.Parse(reader.Value);

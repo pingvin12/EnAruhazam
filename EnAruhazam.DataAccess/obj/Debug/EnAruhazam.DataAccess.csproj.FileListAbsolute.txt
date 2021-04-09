@@ -1,6 +1,6 @@
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\obj\Debug\EnAruhazam.DataAccess.csprojAssemblyReference.cache
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\obj\Debug\EnAruhazam.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Debug\EnAruhazam.DataAccess.dll
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\bin\Debug\EnAruhazam.DataAccess.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\obj\Debug\EnAruhazam.DataAccess.csprojAssemblyReference.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\obj\Debug\EnAruhazam.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\obj\Debug\EnAruhazam.DataAccess.dll
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.DataAccess\obj\Debug\EnAruhazam.DataAccess.pdb

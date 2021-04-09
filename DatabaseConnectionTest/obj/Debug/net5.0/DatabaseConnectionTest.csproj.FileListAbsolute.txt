@@ -107,7 +107,6 @@ C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DatabaseConnectionTest\bin\D
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DatabaseConnectionTest\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DatabaseConnectionTest\bin\Debug\net5.0\EnAruhazam.DataAccess.dll
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DatabaseConnectionTest\bin\Debug\net5.0\EnAruhazam.DataAccess.pdb
-C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DatabaseConnectionTest\bin\Debug\net5.0\EnAruhazam.DataAccess.dll.config
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DatabaseConnectionTest\obj\Debug\net5.0\DatabaseConnectionTest.csprojAssemblyReference.cache
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DatabaseConnectionTest\obj\Debug\net5.0\DatabaseConnectionTest.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\DatabaseConnectionTest\obj\Debug\net5.0\DatabaseConnectionTest.AssemblyInfoInputs.cache

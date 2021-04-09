@@ -13,7 +13,7 @@ namespace EnAruhazam.MenuControl
         public EdatManager()
         {
             InitializeComponent();
-            loadData();
+            LoadData();
         }
         //loads machines that were cleaned in this month
         public static DataSet notcleanedMachines
@@ -25,7 +25,7 @@ namespace EnAruhazam.MenuControl
         /// <summary>
         /// load values from specified table
         /// </summary>
-        private void loadData()
+        private void LoadData()
         {
             using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
 
@@ -42,7 +42,7 @@ namespace EnAruhazam.MenuControl
 
             {
 
-                string CmdString = "SELECT Riport_Date,dbo.Equipments.EquipmentName FROM dbo.Riports INNER JOIN dbo.Equipments ON dbo.Riports.EquipmentID=dbo.Equipments.Id ";
+                string CmdString = "SELECT Riport_Date,dbo.Equipments.EquipmentName, Description FROM dbo.Riports INNER JOIN dbo.Equipments ON dbo.Riports.EquipmentID=dbo.Equipments.Id ";
                 DataSet loadData = MSSQLHelper.NewConnection(CmdString);
 
                 Riports.ItemsSource = loadData.Tables[0].DefaultView;
@@ -51,9 +51,32 @@ namespace EnAruhazam.MenuControl
 
         }
 
-        private void Riports_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        /// <summary>
+        /// Add window
+        /// </summary>
+        private void ChangeWindowChild(Window window)
         {
-            
+            AddDisplay.Children.Clear();
+
+            object content = window.Content;
+            window.Content = null;
+            window.Close();
+            this.AddDisplay.Children.Add(content as UIElement);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (AddDisplay.Children.Count == 0)
+            {
+                AddRiport ar = new AddRiport();
+                ChangeWindowChild(ar);
+                LoadData();
+            }
+            else
+            {
+                MessageBox.Show("Hozzáadás ablak már helyén van így frissítettük a táblázatot.");
+                LoadData();
+            }
         }
     }
 }

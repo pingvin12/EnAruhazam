@@ -61,55 +61,55 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9qriuIpZWdhw0Lab3dREzAO9RejlqjttboZrOzXwvjc=</dsig:DigestValue>
+        <dsig:DigestValue>5vhi6o1Y3ncJPjO3sBQxgoDwPglbUcHj+fnRaKVa7sM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.exe" size="29656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.exe" size="31192">
       <assemblyIdentity name="EnAruhazam" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bBXKzzbcAiAte5/5HyAAN5vU5zHuzP0A3vjFDXevWpM=</dsig:DigestValue>
+        <dsig:DigestValue>DJK/uVUFJfK4pnxt9jr8spWYg3+khjnVbkzBrEQut3Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.DataAccess.dll" size="4608">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.DataAccess.dll" size="5120">
       <assemblyIdentity name="EnAruhazam.DataAccess" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>K0hIw1wF84zaqpj+PurXAEhLQq2OJUR3nKMzZvDmpDk=</dsig:DigestValue>
+        <dsig:DigestValue>itToWd78hKylSjOyjfscUMSJTIjjH0RKW6OynGyKrPU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.MailLogic.dll" size="8704">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.MailLogic.dll" size="9216">
       <assemblyIdentity name="EnAruhazam.MailLogic" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fDgagf8W6koEh6kVOs6y+eoMSPusEtPaEYvnVIAZIFI=</dsig:DigestValue>
+        <dsig:DigestValue>EJvkEQHlYHBBue02O634dMWMpg18riV7HQTF4tF4gNw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.MenuControl.dll" size="33792">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnAruhazam.MenuControl.dll" size="35840">
       <assemblyIdentity name="EnAruhazam.MenuControl" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>IV4ZEb/wt7368O54EACTlSxTABALnUsPDhKiZ5mXZHk=</dsig:DigestValue>
+        <dsig:DigestValue>3POze7MU8NX0J3gTy0IRX4H/kiotHHjRI2j6/K72Hxg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1604,7 +1604,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>CCEDjzX2KiP4En2BT7/gQuW9eLsTIH/JOMx/UX+Jl48=</dsig:DigestValue>
+      <dsig:DigestValue>SnEzZYpPDT1Kezfdg9akyMbKBR1ZuLbfuU4sFuY8s9M=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
