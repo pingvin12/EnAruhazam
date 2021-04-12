@@ -3,7 +3,7 @@
 
 # FAQ
 - How can i get into DEBUG mode?
-Simply change debugmode value to true in EnAruhazam.exe.config
+Simply change debugmode value to true in debug.xml
 
 # Builds
 [Appveyor](https://ci.appveyor.com/project/pingvin12/enaruhazam)
