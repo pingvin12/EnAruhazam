@@ -64,6 +64,9 @@
     <Compile Include="Windows\ManagerWindows\PeopleManager.xaml.cs">
       <DependentUpon>PeopleManager.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\ManagerWindows\SendEmail.xaml.cs">
+      <DependentUpon>SendEmail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ManagerWindows\ShiftManager.xaml.cs">
       <DependentUpon>ShiftManager.xaml</DependentUpon>
     </Compile>
@@ -96,6 +99,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Windows\ManagerWindows\SendEmail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\ManagerWindows\ShiftManager.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -113,6 +120,10 @@
     <ProjectReference Include="..\EnAruhazam.DataAccess\EnAruhazam.DataAccess.csproj">
       <Project>{5bbaa207-52f1-4e19-830d-6d7c10e3e526}</Project>
       <Name>EnAruhazam.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EnAruhazam.MailLogic\EnAruhazam.MailLogic.csproj">
+      <Project>{65E321D6-374D-4EA0-85B6-6E8D7E8C7780}</Project>
+      <Name>EnAruhazam.MailLogic</Name>
     </ProjectReference>
     <ProjectReference Include="..\EnAruhazam.NotificationHandler\EnAruhazam.NotificationHandler.csproj">
       <Project>{88824396-48d7-4e9c-b7e2-75ea94633109}</Project>

@@ -34,3 +34,17 @@ C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\D
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\EnAruhazam.MenuControl.csproj.CopyComplete
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\EnAruhazam.MenuControl.dll
 C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\EnAruhazam.MenuControl.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\EnAruhazam.MailLogic.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\MailKit.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\MimeKit.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\System.Buffers.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\EnAruhazam.MailLogic.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\MailKit.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\MailKit.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\MimeKit.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\MimeKit.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\bin\Debug\System.Buffers.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\Windows\ManagerWindows\SendEmail.g.cs
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MenuControl\obj\Debug\Windows\ManagerWindows\SendEmail.baml

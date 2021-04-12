@@ -8,6 +8,8 @@ using EnAruhazam.NotificationHandler;
 using EnAruhazam.MenuControl;
 using EnAruhazam.MailLogic;
 using EnAruhazam.MenuControl.Windows.ManagerWindows.OptionWindows;
+using EnAruhazam.MenuControl.Windows.ManagerWindows;
+
 namespace EnAruhazam
 {
 
@@ -238,7 +240,8 @@ namespace EnAruhazam
 
         private void Write_Mail(object sender, RoutedEventArgs e)
         {
-            MailLogicBase.NewMail("Fenyesj", "fenyesj@gmail.com", MailLogicBase.mdc.name,MailLogicBase.mdc.pass, "teszt", "teszt");
+            SendEmail se = new SendEmail();
+            se.Show();
         }
     }
 }

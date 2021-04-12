@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-8-195875370
+9-849051986
 
-10-655977416
-16-148981838
-Windows\ManagerWindows\AddOrder.xaml;Windows\ManagerWindows\AddPerson.xaml;Windows\ManagerWindows\EdatManager.xaml;Windows\ManagerWindows\OptionWindows\EmailOptionsMenu.xaml;Windows\ManagerWindows\OrderManager.xaml;Windows\ManagerWindows\PeopleManager.xaml;Windows\ManagerWindows\ShiftManager.xaml;Windows\ManagerWindows\AddRiport.xaml;
+111057437119
+171808447649
+Windows\ManagerWindows\AddOrder.xaml;Windows\ManagerWindows\AddPerson.xaml;Windows\ManagerWindows\EdatManager.xaml;Windows\ManagerWindows\OptionWindows\EmailOptionsMenu.xaml;Windows\ManagerWindows\OrderManager.xaml;Windows\ManagerWindows\PeopleManager.xaml;Windows\ManagerWindows\SendEmail.xaml;Windows\ManagerWindows\ShiftManager.xaml;Windows\ManagerWindows\AddRiport.xaml;
 
 True
 
