@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\MAZSOLA\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\MAZSOLA\\.nuget\\packages",
+      "E:\\sdks&tools\\NuGetPackages"
+    ]
+  }
+}
