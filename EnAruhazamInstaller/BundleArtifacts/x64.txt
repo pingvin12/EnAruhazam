@@ -1,0 +1,2 @@
+MainPackage=C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazamInstaller\bin\x64\Release\EnAruhazamInstaller_1.0.4.0_x64.msix
+SymbolPackage=C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazamInstaller\obj\x64\Release\Symbols\EnAruhazamInstaller_1.0.4.0_x64.appxsym

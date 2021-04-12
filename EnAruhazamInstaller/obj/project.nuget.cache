@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xA9hQxb87i7KaOzADuwtdu4COg/RJ6lA4QrpeCSinVva7AZjZImwzZfggD75Q9P0ZzVepu5vsgJyAlbPfyIEfA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MAZSOLA\\source\\repos\\EnAruhazam\\EnAruhazam\\EnAruhazamInstaller\\EnAruhazamInstaller.wapproj",
+  "expectedPackageFiles": [
+    "E:\\sdks&tools\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.19041.8\\microsoft.windows.sdk.buildtools.10.0.19041.8.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,6 +1,8 @@
 ﻿using System.Windows;
 using EnAruhazam.DataAccess;
 using System.Data;
+using System.Threading.Tasks;
+using Squirrel;
 
 namespace EnAruhazam
 {
@@ -12,8 +14,18 @@ namespace EnAruhazam
         public MainWindow()
         {
             InitializeComponent();
-            
+            CheckForUpdates();
         }
+
+        private async Task CheckForUpdates()
+        {
+            using (var mngr = new UpdateManager(@"C:\Frissitesek"))
+            {
+                await mngr.UpdateApp();
+            }
+        }
+
+
         /// <summary>
         /// signed in username
         /// </summary>

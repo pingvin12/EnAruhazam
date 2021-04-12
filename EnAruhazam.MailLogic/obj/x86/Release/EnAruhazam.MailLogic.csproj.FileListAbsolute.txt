@@ -1,0 +1,17 @@
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\EnAruhazam.MailLogic.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\EnAruhazam.MailLogic.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\BouncyCastle.Crypto.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\MailKit.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\MimeKit.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\System.Buffers.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\BouncyCastle.Crypto.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\MailKit.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\MailKit.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\MimeKit.pdb
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\MimeKit.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\bin\x86\Release\System.Buffers.xml
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\obj\x86\Release\EnAruhazam.MailLogic.csprojAssemblyReference.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\obj\x86\Release\EnAruhazam.MailLogic.csproj.CoreCompileInputs.cache
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\obj\x86\Release\EnAruhazam.MailLogic.csproj.CopyComplete
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\obj\x86\Release\EnAruhazam.MailLogic.dll
+C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\EnAruhazam.MailLogic\obj\x86\Release\EnAruhazam.MailLogic.pdb
