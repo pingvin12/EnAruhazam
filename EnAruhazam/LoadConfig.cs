@@ -47,12 +47,6 @@ namespace EnAruhazam
                 reader.ReadToFollowing("windowHeight");
                 reader.MoveToAttribute("value");
                 WindowHeight = int.Parse(reader.Value);
-                reader.ReadToFollowing("EmailDomainServer");
-                reader.MoveToAttribute("value");
-                emailDomain = reader.Value;
-                reader.ReadToFollowing("EmailPort");
-                reader.MoveToAttribute("value");
-                emailPort = int.Parse(reader.Value);
                 reader.ReadToFollowing("EmailEnabled");
                 reader.MoveToAttribute("value");
                 isLoggedin = bool.Parse(reader.Value);

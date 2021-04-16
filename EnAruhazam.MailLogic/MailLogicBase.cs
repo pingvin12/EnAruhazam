@@ -1,16 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using MailKit;
 using MailKit.Net.Imap;
+using MailKit.Net.Pop3;
 using MailKit.Net.Smtp;
 using MailKit.Search;
 using MimeKit;
 
 namespace EnAruhazam.MailLogic
 {
+	/// <summary>
+    /// Mail base logic
+    /// </summary>
     public static class MailLogicBase
     {
         private static bool IsLoggedIn { get; set; }
@@ -48,15 +53,17 @@ namespace EnAruhazam.MailLogic
         {
             if(IsLoggedIn)
             {
-                using (var client = new ImapClient(new ProtocolLogger("imap.log")))
+                using (var client = new Pop3Client(new ProtocolLogger("pop3.log")))
                 {
                     client.Connect(mdc.Server, mdc.Port, MailKit.Security.SecureSocketOptions.SslOnConnect);
                     client.AuthenticationMechanisms.Remove("XOAUTH2");
-                    client.Authenticate(mdc.name, mdc.pass, mdc.cancel.Token);
-                    var uids = client.Inbox;
-                    for (int i = 0; i < uids.Count; i++)
+                    client.Authenticate(mdc.credentials,mdc.cancel.Token);
+
+                    
+                    
+                    for (int i = 0; i < client.Count; i++)
                     {
-                        var msg = uids.GetMessage(i, mdc.cancel.Token);
+                        var msg = client.GetMessage(i);
                         if(treeView.SelectedItem.ToString() == msg.Subject)
                         {
                             displayBody.Text = msg.Body.ToString();
@@ -75,11 +82,12 @@ namespace EnAruhazam.MailLogic
         /// <summary>
         /// Returns all the mails present in user's gmail.
         /// </summary>
-        public static void GetMails(string[] inb)
+        public static void GetMails(List<string> all)
         {
+           
             if (IsLoggedIn)
             {
-                using (var client = new ImapClient(new ProtocolLogger ("imap.log")))  //imag.log helps us to understand what happens outside the exceptions
+                using (var client = new Pop3Client(new ProtocolLogger("pop3.log")))  //imag.log helps us to understand what happens outside the exceptions
                 {
                     try { 
                     client.Connect(mdc.Server,mdc.Port,MailKit.Security.SecureSocketOptions.SslOnConnect);
@@ -89,14 +97,13 @@ namespace EnAruhazam.MailLogic
                         
                         
                     client.AuthenticationMechanisms.Remove("XOAUTH2");
-                    client.Authenticate(mdc.name, mdc.pass,mdc.cancel.Token);
-                        var uids = client.Inbox;
-                        
+                    client.Authenticate(mdc.name, mdc.pass);
+                    
                         //We iterate over the emails that the user has received...
-                        for (int i = 0; i < uids.Count; i++)
+                        for (int i = 0; i < client.Count; i++)
                     {
-                        var msg = uids.GetMessage(i,mdc.cancel.Token);
-                            inb[i] += msg.Subject;
+                            var msg = client.GetMessage(i);
+                            all.Add(msg.Subject);
                            // tree.Items.Add(msg.Subject);
                         
 

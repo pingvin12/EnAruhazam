@@ -5,6 +5,9 @@ using EnAruhazam.DataAccess;
 /// </summary>
 namespace DatabaseConnectionTest
 {
+/// <summary>
+    /// Testing database by mocking.
+    /// </summary>
     public class DatabaseTests
     {
        
@@ -19,6 +22,21 @@ namespace DatabaseConnectionTest
             Assert.That(MSSQLHelper.testHashSet.Count != 0);
            
         }
+
+        /// <summary>
+        /// Checking if our db is not null
+        /// </summary>
+        [Test]
+        public void TestIfNotEmpty()
+        {
+
+
+
+            Assert.NotNull(MSSQLHelper.testHashSet);
+            
+
+        }
+
 
         /// <summary>
         /// Checking that we have all the tables we need.

@@ -1,11 +1,9 @@
 <Configuration>
-  <debug value="true" />
+  <debug value="false" />
   <fullscreen value="false" />
   <windowWidth value="1280" />
   <windowHeight value="720" />
-  <EmailDomainServer value="imap.gmail.com" />
-  <EmailPort value="993" />
   <EmailEnabled value="true" />
   <Email value="tesztemail888" />
-  <Password value="123456Aa@" />
+  <Password value="7654321Aa11!" />
 </Configuration>

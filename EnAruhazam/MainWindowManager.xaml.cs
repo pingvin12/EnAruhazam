@@ -9,6 +9,7 @@ using EnAruhazam.MenuControl;
 using EnAruhazam.MailLogic;
 using EnAruhazam.MenuControl.Windows.ManagerWindows.OptionWindows;
 using EnAruhazam.MenuControl.Windows.ManagerWindows;
+using System.Collections.Generic;
 
 namespace EnAruhazam
 {
@@ -43,11 +44,12 @@ namespace EnAruhazam
         void InitContent()
         {
             LoadConfig.Load(debugw, this);
-            string[] inb = Array.Empty<string>();
+           
             MailLogicBase.LogIn(LoadConfig.email, LoadConfig.password);
             
             //Get Current Emails if config says so
-            if (LoadConfig.isLoggedin == true) { 
+            // Egy ideig müködött aztán már nem
+            /*if (LoadConfig.isLoggedin == true) { 
             try
             {
             MailLogicBase.mdc.Server = LoadConfig.emailDomain;
@@ -56,13 +58,13 @@ namespace EnAruhazam
             MailLogicBase.GetMails(inb);
            foreach(var item in inb)
                     {
-                        MTree.Items.Add(item);
+                        MTree.Items.Add(item.ToString());
                     }
             }catch(Exception e)
             {
                 MessageBox.Show(e.Message);
             }
-            }
+            }*/
             GlobalTypes.OptionsButtons[0] = EmailOptions;
            
 

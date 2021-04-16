@@ -7,7 +7,9 @@ namespace EnAruhazam.NotificationHandler
 {
 
 
-
+/// <summary>
+    /// Can instantiate a notification with the manager.
+    /// </summary>
     public class NotificationManager
     {
         
@@ -18,7 +20,7 @@ namespace EnAruhazam.NotificationHandler
         [Flags]
         public enum NotifType
         {
-            //placeholders for now
+            
             UNKNOWN = -1,
             TEST = 0,
             EXPIRED_PROD = 1,

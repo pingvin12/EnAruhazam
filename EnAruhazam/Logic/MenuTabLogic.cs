@@ -9,6 +9,9 @@ using System.Windows.Controls;
 
 namespace EnAruhazam
 {
+/// <summary>
+    /// mainly used for GUI logic(example:TabControl gui)
+    /// </summary>
     public class MenuTabLogic
     {
         public Button[] mainParentButtons;

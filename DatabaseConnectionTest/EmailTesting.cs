@@ -5,24 +5,13 @@ using EnAruhazam.MailLogic;
 
 namespace DatabaseConnectionTest
 {
-
+/// <summary>
+    /// Email connection, Email sending, and Contact list testing.
+    /// </summary>
     class EmailTests
     {
 
-        /// <summary>
-        ///  Testing if the connection is succesful
-        /// </summary>
-        [Test]
-        public void TestEmailConnection()
-        {
-            string[] inb = Array.Empty<string>();
-            MailLogicBase.mdc.Port = 993;
-            MailLogicBase.mdc.Server = "imap.gmail.com";
-            MailLogicBase.LogIn("tesztemail888", "123456Aa@");
-            MailLogicBase.GetMails(inb);
-            Assert.IsNotNull(inb);
-        }
-
+     
         /// <summary>
         ///  Testing if sending emails are successful.
         /// </summary>

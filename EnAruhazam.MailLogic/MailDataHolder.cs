@@ -3,6 +3,9 @@ using System.Xml;
 
 namespace EnAruhazam.MailLogic
 {
+/// <summary>
+    /// Contact list class
+    /// </summary>
     public class MailDataHolder
     {
         private List<Contact> Contacts = new List<Contact>();

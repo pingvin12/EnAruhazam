@@ -7,12 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <Label Content="Id:" Margin="0,0,305,0"></Label>
-        <TextBox Name="Id" Height="16" Margin="0,0,305,0"></TextBox>
         <Label Content="Riport Date:" Margin="0,0,305,0"></Label>
-        <TextBox Name="RiportDate" Margin="0,0,305,0"></TextBox>
-        <Label Content="Equipment Id:" Margin="0,0,305,0"></Label>
-        <TextBox Name="EquipmentID" Margin="0,0,305,0"></TextBox>
+        <DatePicker Margin="0,0,305,0" Name="RiportDate" />
+        <Label Content="Equipment Name:" Margin="0,0,305,0"></Label>
+        <ComboBox x:Name="SelectableEquipments" Height="25" Margin="0,0,305,0" />
         <Label Content="Description" Margin="0,0,305,0"></Label>
         <TextBox Name="Description" Height="100" Margin="0,0,305,0"></TextBox>
         <Button Width="100" Name="AddRip" Click="AddRip_Click" Margin="0,0,305,0" >Elküldés</Button>

@@ -27,16 +27,6 @@ namespace EnAruhazam.MenuControl
         /// </summary>
         private void LoadData()
         {
-            using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
-
-            {
-
-                string CmdString = "SELECT EquipmentName FROM dbo.Equipments ORDER BY Id";
-                DataSet loadData = MSSQLHelper.NewConnection( CmdString);
-
-                Equipments.ItemsSource = loadData.Tables[0].DefaultView;
-                con.Close();
-            }
 
             using (SqlConnection con = new SqlConnection(MSSQLHelper.GetConStr()))
 
@@ -66,6 +56,7 @@ namespace EnAruhazam.MenuControl
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+           
             if (AddDisplay.Children.Count == 0)
             {
                 AddRiport ar = new AddRiport();
@@ -74,9 +65,14 @@ namespace EnAruhazam.MenuControl
             }
             else
             {
-                MessageBox.Show("Hozzáadás ablak már helyén van így frissítettük a táblázatot.");
-                LoadData();
+                AddDisplay.Children.Clear();
             }
+     
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            LoadData();
         }
     }
 }

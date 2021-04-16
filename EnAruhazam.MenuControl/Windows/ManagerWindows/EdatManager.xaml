@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EnAruhazam.MenuControl"
         mc:Ignorable="d"
-        Title="EdatManager" Height="450" Width="800">
+        Title="EdatManager" Height="680.548" Width="1300">
     <Grid>
-        <DataGrid IsReadOnly="True" Name="Equipments" HorizontalAlignment="Left" Height="372" Margin="10,10,0,0" VerticalAlignment="Top" Width="243"/>
-        <DataGrid IsReadOnly="True" Name="Riports" HorizontalAlignment="Left" Height="399" Margin="258,10,0,0" VerticalAlignment="Top" Width="333" />
-
-        <Button Height="25" Width="50" Content="Új riport" Click="Button_Click" Margin="10,387,732,7"></Button>
-        <StackPanel Margin="596,10,0,0"  Name="AddDisplay"></StackPanel>
+        <DataGrid IsReadOnly="True" Name="Riports" HorizontalAlignment="Left" Height="474" Margin="10,10,0,0" VerticalAlignment="Top" Width="794" />
+            <Button Height="25" Width="50" Content="Új riport" Click="Button_Click" Margin="10,489,1232,136" />
+        
+        <StackPanel Margin="809,10,0,10"  Name="AddDisplay"></StackPanel>
+        <Button Height="25" Width="50" Content="Frissítés" Click="Button_Click_1" Margin="65,489,1177,136" />
     </Grid>
 </Window>

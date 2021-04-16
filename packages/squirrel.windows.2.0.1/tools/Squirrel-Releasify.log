@@ -7,3 +7,12 @@
 [12. 04. 21 14:57:14] info: ReleasePackage: No release notes found in C:\Users\MAZSOLA\AppData\Local\SquirrelTemp\tempa\EnAruhazam.nuspec
 [12. 04. 21 14:57:17] info: Program: Building embedded zip file for Setup.exe
 [12. 04. 21 14:57:24] info: Program: Finished Squirrel Updater
+[16. 04. 21 17:25:31] info: Program: Starting Squirrel Updater: --releasify EnAruhazam.1.0.0.nupkg
+[16. 04. 21 17:25:31] info: Program: Bootstrapper EXE found at:C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[16. 04. 21 17:25:31] info: Program: Creating release package: C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\Releases\EnAruhazam.1.0.0.nupkg
+[16. 04. 21 17:25:32] info: ReleasePackage: Creating release package: C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\Releases\EnAruhazam.1.0.0.nupkg => C:\Users\MAZSOLA\source\repos\EnAruhazam\EnAruhazam\Releases\EnAruhazam-1.0.0-full.nupkg
+[16. 04. 21 17:25:34] info: ReleasePackage: Extracting dependent packages: []
+[16. 04. 21 17:25:34] info: ReleasePackage: Removing unnecessary data
+[16. 04. 21 17:25:34] info: ReleasePackage: No release notes found in C:\Users\MAZSOLA\AppData\Local\SquirrelTemp\tempa\EnAruhazam.nuspec
+[16. 04. 21 17:25:45] info: Program: Building embedded zip file for Setup.exe
+[16. 04. 21 17:26:11] info: Program: Finished Squirrel Updater

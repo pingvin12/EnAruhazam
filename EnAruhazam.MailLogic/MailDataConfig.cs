@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace EnAruhazam.MailLogic
 {
+/// <summary>
+    /// Config container class
+    /// </summary>
     public class MailDataConfig
     {
         public string name;
