@@ -17,3 +17,5 @@ Mailkit and DesktopToast
 ![123](https://user-images.githubusercontent.com/1901727/125084164-80ddcd00-e0c9-11eb-85b9-359835e107c9.PNG)
 Downloadable empty database with the required tables only: 
 https://mega.nz/folder/EBkCGThJ#jh7iZnHLHkMJ0N0OOEDK2A
+# Managers tab screenshot
+![3](https://user-images.githubusercontent.com/1901727/125085629-1594fa80-e0cb-11eb-88b8-3f95decb41ae.PNG)
